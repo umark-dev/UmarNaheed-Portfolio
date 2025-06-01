@@ -37,7 +37,7 @@ I'm a Full-Stack MERN Developer, Python Programmer, and Generative AI Engineer d
 - 📧 Email: umark.dev@gmail.com  
 - 🔗 LinkedIn: [linkedin.com/in/umarx-dev](https://linkedin.com/in/umarx-dev)  
 - 🧑‍💻 Fiverr: [fiverr.com/m_umar_kakazayi](https://fiverr.com/m_umar_kakazayi)  
-- 🌐 Portfolio: [Coming Soon]
+- 🌐 Portfolio: https://umar-naheed.mystrikingly.com/
 
 ---
 
