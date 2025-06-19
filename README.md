@@ -1,118 +1,95 @@
-Here is your professional `README.md` file for GitHub, fully matching your HTML portfolio's design and structure — clean, realistic, and reflective of your expertise:
-
----
-
 ````markdown
-# 💼 Muhammad Umar Naheed – Full Stack Portfolio
+# 💼 Muhammad Umar Naheed — Developer Portfolio
 
-Welcome to my personal developer portfolio – an all-in-one showcase of my technical, design, and professional achievements. Built entirely using **HTML, CSS, and JavaScript**, this portfolio is designed for high performance, visual clarity, and credibility across the globe.
-
-## 🌐 Live Website
-
-📎 **Portfolio URL**: [Coming Soon](#)
-
-📧 **Email**: umark.dev@gmail.com  
-🔗 **GitHub**: [github.com/umar-naheed](https://github.com/umar-naheed)
+Welcome to my personal developer portfolio website! This is a fully responsive and professionally designed project that showcases my skills, projects, services, certifications, client testimonials, and contact information — built using only **HTML5 + CSS3 + JS (vanilla)**.
 
 ---
 
-## 📁 Pages Included
-
-| Page             | Description                                                                 |
-|------------------|-----------------------------------------------------------------------------|
-| `index.html`     | Elegant homepage with animated intro and call-to-action                     |
-| `about.html`     | My professional story, values, and qualifications                           |
-| `skills.html`    | Categorized and filterable display of 50+ technical & soft skills           |
-| `projects.html`  | 100+ real-world web, mobile, AI & automation projects with filtering        |
-| `certifications.html` | 20+ certificates from Google, Meta, IBM, Microsoft and more         |
-| `services.html`  | Freelance services with detailed descriptions and pricing tiers             |
-| `testimonials.html` | 25+ real client testimonials including from Google, AWS, IBM & Visa   |
-| `contact.html`   | Contact form with social/email links and professional info                  |
-| `README.html`    | Internal documentation and usage guide                                      |
+## 🌐 Live Preview
+> If hosted, add your live preview link here:  
+**🔗 https://umarnaheed.dev/**
 
 ---
 
-## 🛠️ Technologies Used
+## 📂 Project Structure
 
-- **HTML5**, **CSS3** (custom — no Bootstrap)
-- **Vanilla JavaScript**
-- **Responsive design** (mobile-first)
-- **Font Awesome** for icons
-- **Google Fonts** for beautiful typography
-- **No external folders or images required**
+All files are located in the main folder (no external images or CSS/JS dependencies).
 
----
-
-## 📦 Folder Structure
-
-```plaintext
-📁 Main Folder
-├── index.html
-├── about.html
-├── skills.html
-├── projects.html
-├── certifications.html
-├── services.html
-├── testimonials.html
-├── contact.html
-└── README.md
+```bash
+📁 Portfolio/
+├── index.html             # Landing/Home page
+├── about.html             # Bio, education, and background
+├── skills.html            # Technical & creative skillset
+├── projects.html          # 100+ categorized real-world projects
+├── certifications.html    # 20+ verified certifications (no images)
+├── services.html          # Services offered with pricing & features
+├── testimonials.html      # Real feedback from 20+ international clients
+├── contact.html           # Contact form with email & location info
+├── README.md              # This file
 ````
 
 ---
 
-## ✨ Features
+## 🚀 Features
 
-* 🔹 Fully responsive across all devices
-* 🔹 Real client testimonials and project data
-* 🔹 Smooth filtering of skills & projects
-* 🔹 All content loads without internet dependencies
-* 🔹 No frameworks — clean, readable HTML/CSS
-* 🔹 Global-ready for clients & hiring managers
+✅ Fully responsive layout
+✅ Minimal, modern, and elegant UI
+✅ Organized into multiple professional sections
+✅ No external JS or image dependencies
+✅ Enhanced semantic HTML with accessibility in mind
+✅ Cross-browser compatibility
+✅ Custom project filter buttons, form validation, and client feedback
 
 ---
 
-## 🚀 How to Run Locally
+## 🔧 Technologies Used
 
-1. **Clone this repo:**
+* HTML5
+* CSS3
+* Vanilla JavaScript (inline only)
+* Google Fonts (Poppins)
+* Font Awesome Icons
+* Responsive Design (media queries & flexible grids)
 
-```bash
-git clone https://github.com/umar-naheed/portfolio.git
-cd portfolio
+---
+
+## 📸 Screenshots
+
+> You can add your screenshots below using markdown:
+
+```
+![Home Page](screenshots/homepage.png)
+![Projects Page](screenshots/projects.png)
+![Testimonials](screenshots/testimonials.png)
 ```
 
-2. **Open in browser:**
-
-* Simply open `index.html` in any browser
-* No server or npm installation required
-
 ---
 
-## 🧠 Highlights
+## ✨ Credits
 
-* 💼 100+ Projects across Web, AI, Mobile, and Automation
-* 📜 Verified Certifications from global institutions
-* 🌍 Collaborations with clients from Google, AWS, IBM, Visa, and more
-* 🛠️ Services tailored to freelancers, startups, and enterprise projects
-* 🤝 25+ testimonials reflecting expertise and professionalism
+This portfolio reflects the personal brand and experience of **Muhammad Umar Naheed** — a full-stack developer, AI enthusiast, designer, and digital consultant.
+
+Feel free to use this structure as a boilerplate for your own profile with proper credit.
 
 ---
 
 ## 📬 Contact Me
 
-* **Email**: [umark.dev@gmail.com](mailto:umark.dev@gmail.com)
-* **GitHub**: [github.com/umar-naheed](https://github.com/umar-naheed)
-* **LinkedIn**: Coming Soon
+📧 Email: [umark.dev@gmail.com](mailto:umark.dev@gmail.com)
+🌐 GitHub: [github.com/umar-naheed](https://github.com/umar-naheed)
+📍 Location: Pakistan (Available Worldwide)
 
 ---
 
-## 📝 License
+## 📄 License
 
-This repository is for learning and portfolio purposes. You're welcome to reference or fork, but **please credit** Muhammad Umar Naheed for original structure and content.
+This project is open for learning purposes.
+**Not for commercial resale or template selling without permission.**
 
 ---
 
-### Built with 💻 by Muhammad Umar Naheed
+## 🏁 Contribution
+
+🙌 If you'd like to collaborate, improve UI/UX, or suggest enhancements — feel free to fork and raise a pull request!
 
 ```
-
-
