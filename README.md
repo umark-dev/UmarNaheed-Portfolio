@@ -29,24 +29,24 @@ This portfolio is built with only HTML, CSS, and JavaScript — no frameworks, n
 
 ## 📂 File Structure
 
-/UmarNaheed-Portfolio/
-│
-├── index.html
-├── about.html
-├── skills.html
-├── projects.html
-├── certifications.html
-├── services.html
-├── testimonials.html
-├── contact.html
-├── README.md
+| File Name             | Description                               |
+|----------------------|-------------------------------------------|
+| `index.html`         | Landing page with introduction            |
+| `about.html`         | Personal and academic background          |
+| `skills.html`        | Categorized technical skills              |
+| `projects.html`      | Detailed list of 100+ real-world projects |
+| `certifications.html`| Verified certifications from top platforms|
+| `services.html`      | Offered freelance and tech services       |
+| `testimonials.html`  | Feedback from international clients       |
+| `contact.html`       | Contact form and professional links       |
+| `README.md`          | Project documentation file                |
 
 
 ## 📧 Contact
 
 - **Email**: umark.dev@gmail.com  
-- **GitHub**: [github.com/umar-naheed](https://github.com/umar-naheed)  
-- **LinkedIn**: [linkedin.com/in/umarkdev](https://linkedin.com/in/umarkdev)
+- **GitHub**: [github.com/umark-dev](https://github.com/umark-dev)  
+- **LinkedIn**: [linkedin.com/in/umarx-dev](linkedin.com/in/umarx-dev)
 
 ---
 
