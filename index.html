@@ -46,6 +46,116 @@
       background: url('https://www.transparenttextures.com/patterns/graphy.png');
       opacity: 0.1;
     }
+    :root {
+      --primary: #0f2027;
+      --secondary: #203a43;
+      --accent: #2c5364;
+      --highlight: #00ffff;
+      --light-bg: #f4f6f9;
+      --white: #ffffff;
+      --dark: #333;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--light-bg);
+      margin: 0;
+      padding: 0;
+      color: var(--dark);
+    }
+    .section-title {
+      font-size: 2.7rem;
+      text-align: center;
+      color: var(--primary);
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .section-title::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: var(--highlight);
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 4px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .project-showcase {
+      margin-top: 90px;
+      padding: 60px 20px;
+    }
+    .project-card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+      transition: 0.3s ease;
+      cursor: pointer;
+    }
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 14px 32px rgba(0,0,0,0.12);
+    }
+    .project-title {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      font-weight: 600;
+      color: var(--primary);
+    }
+    .project-card a {
+      color: var(--accent);
+      text-decoration: underline;
+      display: block;
+      margin-top: 10px;
+    }
+    .testimonial-section {
+      padding: 80px 20px;
+      background-color: #f0f2f5;
+      text-align: center;
+    }
+    .testimonial-section blockquote {
+      font-style: italic;
+      color: #444;
+      max-width: 800px;
+      margin: 20px auto;
+      position: relative;
+    }
+    .testimonial-section blockquote::before {
+      content: '“';
+      font-size: 3rem;
+      color: var(--accent);
+      position: absolute;
+      left: -25px;
+      top: -10px;
+    }
+    .testimonial-section cite {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      color: var(--secondary);
+    }
+    .download-section {
+      text-align: center;
+      padding: 70px 20px;
+    }
+    .download-section a {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 15px 35px;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .download-section a:hover {
+      background: var(--accent);
+    }
     nav {
       background-color: var(--secondary);
       display: flex;
@@ -297,20 +407,25 @@
       <div class="stat-box">💼 30+ Long-Term Clients</div>
     </div>
   </section>
+  
+  
   <section class="project-showcase">
     <h2 class="section-title">Featured Projects</h2>
     <div class="grid">
       <div class="project-card">
         <div class="project-title">AI-Based Resume Builder (React + OpenAI API)</div>
         <p>Built a smart resume builder that uses GPT-4 to generate professional resume content. Integrated Firebase for auth and Firestore for storage.</p>
+        <a href="#">View Case Study</a>
       </div>
       <div class="project-card">
         <div class="project-title">E-Commerce Platform (MERN + Stripe)</div>
         <p>A fully responsive multi-vendor e-commerce platform with product analytics dashboard, secure payments via Stripe, and admin CMS.</p>
+        <a href="#">View Case Study</a>
       </div>
       <div class="project-card">
         <div class="project-title">CyberSecure LMS System</div>
         <p>Developed a secure learning management system with role-based access control, JWT authentication, real-time notifications and audit logging.</p>
+        <a href="#">View Case Study</a>
       </div>
     </div>
   </section>
@@ -327,6 +442,10 @@
     </blockquote>
   </section>
 
+  <section class="download-section">
+    <h2 class="section-title">Download Full Portfolio</h2>
+    <a href="assets/Muhammad-Umar-Portfolio.pdf" download>📄 Download PDF</a>
+  </section>
   <footer>
     <p>© 2025 Muhammad Umar Naheed | Crafted with Code, Creativity & Consistency 🚀</p>
     <p>Email: umarnaheed@gmail.com | GitHub: github.com/umar-naheed</p>
