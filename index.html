@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Umar Naheed | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f5f7fa;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      opacity: 0.9;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section-title {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #0f2027;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+    .skills i, .projects i {
+      font-size: 2rem;
+      color: #203a43;
+    }
+    .about p {
+      line-height: 1.8;
+      font-size: 1rem;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+    footer {
+      background: #203a43;
+      color: white;
+      text-align: center;
+      padding: 40px 10px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Muhammad Umar Naheed</h1>
+    <p>Full Stack Developer | Mobile App Developer | Graphic Designer | SEO Expert | AI Enthusiast | Cybersecurity Learner</p>
+  </header>
+
+  <section class="about">
+    <h2 class="section-title">About Me</h2>
+    <p>I'm a multi-skilled developer and designer with over 7 years of hands-on experience in Full Stack Web Development, Mobile Applications, Graphic Design, Digital Marketing, Cybersecurity, and Generative AI. I create responsive, fast, secure, and innovative solutions to help brands grow digitally.</p>
+  </section>
+
+  <section class="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="grid">
+      <div class="card"><i class="fab fa-html5"></i><h3>HTML5, CSS3, JavaScript</h3></div>
+      <div class="card"><i class="fab fa-react"></i><h3>React.js, Next.js, Vue.js</h3></div>
+      <div class="card"><i class="fas fa-database"></i><h3>Node.js, Firebase, MongoDB</h3></div>
+      <div class="card"><i class="fab fa-android"></i><h3>Android Studio, Kotlin, Flutter</h3></div>
+      <div class="card"><i class="fab fa-python"></i><h3>Python, Django, AI APIs</h3></div>
+      <div class="card"><i class="fas fa-shield-alt"></i><h3>Cybersecurity Basics, OWASP</h3></div>
+      <div class="card"><i class="fas fa-brain"></i><h3>AI Tools: ChatGPT, OpenAI, Midjourney</h3></div>
+      <div class="card"><i class="fas fa-chart-line"></i><h3>SEO, Google Analytics, Ads</h3></div>
+      <div class="card"><i class="fas fa-paint-brush"></i><h3>Figma, Canva, Adobe Suite</h3></div>
+    </div>
+  </section>
+
+  <section class="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="grid">
+      <div class="card"><i class="fas fa-laptop-code"></i><h3>Personal Portfolio Website</h3><p>Responsive & modern portfolio hosted on GitHub Pages.</p></div>
+      <div class="card"><i class="fas fa-video"></i><h3>Movie Streaming Website</h3><p>Movie sharing platform with JS-based UI/UX effects.</p></div>
+      <div class="card"><i class="fas fa-dice"></i><h3>Dice Roller App</h3><p>Android app that uses Kotlin & vector graphics for gameplay.</p></div>
+      <div class="card"><i class="fas fa-bug"></i><h3>Cybersecurity Scanner</h3><p>Scans for basic website vulnerabilities using Python.</p></div>
+      <div class="card"><i class="fas fa-robot"></i><h3>AI Resume Analyzer</h3><p>Suggests resume improvements using OpenAI APIs.</p></div>
+      <div class="card"><i class="fas fa-microphone"></i><h3>Voice Notes Web App</h3><p>Voice-to-text notepad using Web Speech API + Firebase.</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Muhammad Umar Naheed | Designed with ❤ and Code</p>
+    <p>Email: umark.dev@gmail.com | GitHub: github.com/umark-dev</p>
+  </footer>
+</body>
+</html>
