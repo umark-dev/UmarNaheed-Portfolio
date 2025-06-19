@@ -193,6 +193,52 @@
       color: var(--highlight);
       font-weight: bold;
     }
+      .project-showcase {
+      margin-top: 90px;
+    }
+    .project-showcase .project-card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+      transition: 0.3s ease;
+    }
+    .project-showcase .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 14px 32px rgba(0,0,0,0.12);
+    }
+    .project-showcase .project-title {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      font-weight: 600;
+      color: var(--primary);
+    }
+    .testimonial-section {
+      padding: 80px 20px;
+      background-color: #f0f2f5;
+      text-align: center;
+    }
+    .testimonial-section blockquote {
+      font-style: italic;
+      color: #444;
+      max-width: 800px;
+      margin: 20px auto;
+      position: relative;
+    }
+    .testimonial-section blockquote::before {
+      content: '“';
+      font-size: 3rem;
+      color: var(--accent);
+      position: absolute;
+      left: -25px;
+      top: -10px;
+    }
+    .testimonial-section cite {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      color: var(--secondary);
+    }
   </style>
 </head>
 <body>
@@ -250,6 +296,35 @@
       <div class="stat-box">🏆 20+ Certifications Earned</div>
       <div class="stat-box">💼 30+ Long-Term Clients</div>
     </div>
+  </section>
+  <section class="project-showcase">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="grid">
+      <div class="project-card">
+        <div class="project-title">AI-Based Resume Builder (React + OpenAI API)</div>
+        <p>Built a smart resume builder that uses GPT-4 to generate professional resume content. Integrated Firebase for auth and Firestore for storage.</p>
+      </div>
+      <div class="project-card">
+        <div class="project-title">E-Commerce Platform (MERN + Stripe)</div>
+        <p>A fully responsive multi-vendor e-commerce platform with product analytics dashboard, secure payments via Stripe, and admin CMS.</p>
+      </div>
+      <div class="project-card">
+        <div class="project-title">CyberSecure LMS System</div>
+        <p>Developed a secure learning management system with role-based access control, JWT authentication, real-time notifications and audit logging.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial-section">
+    <h2 class="section-title">What Clients Say</h2>
+    <blockquote>
+      “Umar delivered our AI startup MVP 3 weeks ahead of schedule. His understanding of both front-end excellence and backend scalability is rare.”
+      <cite>— Sarah Khan, Founder, AIPath</cite>
+    </blockquote>
+    <blockquote>
+      “I've worked with hundreds of developers on Fiverr, Upwork & LinkedIn. Umar is in the top 1%. His code is clean, scalable and always meets deadlines.”
+      <cite>— Daniel Mendez, CTO, CodeCrew</cite>
+    </blockquote>
   </section>
 
   <footer>
