@@ -3,125 +3,259 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Muhammad Umar Naheed | Portfolio</title>
+  <title>Muhammad Umar Naheed | Expert Full Stack Developer</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --primary: #0f2027;
+      --secondary: #203a43;
+      --accent: #2c5364;
+      --highlight: #00ffff;
+      --light-bg: #f4f6f9;
+      --white: #ffffff;
+      --dark: #333;
+    }
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       font-family: 'Poppins', sans-serif;
-      background: #f5f7fa;
-      color: #333;
+      background-color: var(--light-bg);
+      color: var(--dark);
     }
     header {
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: #fff;
-      padding: 60px 20px;
+      background: linear-gradient(to right, var(--primary), var(--secondary), var(--accent));
+      color: var(--white);
+      padding: 70px 20px;
       text-align: center;
+      position: relative;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      background: url('https://www.transparenttextures.com/patterns/graphy.png');
+      opacity: 0.1;
+    }
+    nav {
+      background-color: var(--secondary);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: var(--white);
+      margin: 10px 20px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: var(--highlight);
     }
     header h1 {
-      font-size: 3rem;
+      font-size: 3.5rem;
+      margin-bottom: 12px;
     }
     header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-      opacity: 0.9;
+      font-size: 1.4rem;
+      opacity: 0.95;
     }
     section {
-      padding: 60px 20px;
+      padding: 90px 20px;
       max-width: 1200px;
       margin: auto;
     }
     .section-title {
-      font-size: 2.2rem;
-      margin-bottom: 30px;
+      font-size: 2.7rem;
+      margin-bottom: 50px;
       text-align: center;
-      color: #0f2027;
+      color: var(--primary);
+      position: relative;
+    }
+    .section-title::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: var(--highlight);
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 4px;
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 35px;
     }
     .card {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-      padding: 20px;
-      transition: transform 0.3s ease;
+      background: var(--white);
+      border-radius: 14px;
+      padding: 35px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-left: 5px solid var(--accent);
     }
     .card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+    .card i {
+      font-size: 2.6rem;
+      color: var(--secondary);
     }
     .card h3 {
-      margin-top: 10px;
-      font-size: 1.1rem;
+      margin: 15px 0 10px;
+      font-size: 1.35rem;
     }
-    .skills i, .projects i {
-      font-size: 2rem;
-      color: #203a43;
-    }
-    .about p {
-      line-height: 1.8;
+    .card p {
       font-size: 1rem;
-      max-width: 900px;
-      margin: auto;
+      line-height: 1.7;
+    }
+    .cta {
       text-align: center;
+      margin-top: 70px;
+    }
+    .cta a {
+      background: var(--primary);
+      color: var(--white);
+      padding: 15px 40px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: background 0.3s ease;
+    }
+    .cta a:hover {
+      background: var(--accent);
+    }
+    .feature-section {
+      margin-top: 60px;
+    }
+    .feature-section ul {
+      max-width: 900px;
+      margin: 0 auto;
+      padding-left: 25px;
+      font-size: 1.1rem;
+      line-height: 1.9;
+    }
+    .feature-section ul li::marker {
+      content: '✓ ';
+      color: var(--accent);
+      font-weight: bold;
+    }
+    .stats-section {
+      margin-top: 80px;
+      text-align: center;
+      background: #e3e9f0;
+      padding: 50px 20px;
+      border-radius: 12px;
+    }
+    .stats-section h3 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: var(--primary);
+    }
+    .stats-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+    .stat-box {
+      background: white;
+      padding: 25px 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+      font-size: 1.2rem;
     }
     footer {
-      background: #203a43;
-      color: white;
+      background: var(--secondary);
+      color: var(--white);
       text-align: center;
-      padding: 40px 10px;
-      margin-top: 60px;
+      padding: 50px 20px;
+      margin-top: 90px;
+    }
+    .highlight {
+      color: var(--highlight);
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Muhammad Umar Naheed</h1>
-    <p>Full Stack Developer | Mobile App Developer | Graphic Designer | SEO Expert | AI Enthusiast | Cybersecurity Learner</p>
+    <p class="highlight">Expert Full Stack Developer | AI & Cybersecurity Specialist | UI/UX Strategist | DevOps Enthusiast</p>
   </header>
 
-  <section class="about">
-    <h2 class="section-title">About Me</h2>
-    <p>I'm a multi-skilled developer and designer with over 7 years of hands-on experience in Full Stack Web Development, Mobile Applications, Graphic Design, Digital Marketing, Cybersecurity, and Generative AI. I create responsive, fast, secure, and innovative solutions to help brands grow digitally.</p>
-  </section>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="services.html">Services</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-  <section class="skills">
-    <h2 class="section-title">Skills</h2>
-    <div class="grid">
-      <div class="card"><i class="fab fa-html5"></i><h3>HTML5, CSS3, JavaScript</h3></div>
-      <div class="card"><i class="fab fa-react"></i><h3>React.js, Next.js, Vue.js</h3></div>
-      <div class="card"><i class="fas fa-database"></i><h3>Node.js, Firebase, MongoDB</h3></div>
-      <div class="card"><i class="fab fa-android"></i><h3>Android Studio, Kotlin, Flutter</h3></div>
-      <div class="card"><i class="fab fa-python"></i><h3>Python, Django, AI APIs</h3></div>
-      <div class="card"><i class="fas fa-shield-alt"></i><h3>Cybersecurity Basics, OWASP</h3></div>
-      <div class="card"><i class="fas fa-brain"></i><h3>AI Tools: ChatGPT, OpenAI, Midjourney</h3></div>
-      <div class="card"><i class="fas fa-chart-line"></i><h3>SEO, Google Analytics, Ads</h3></div>
-      <div class="card"><i class="fas fa-paint-brush"></i><h3>Figma, Canva, Adobe Suite</h3></div>
+  <section>
+    <h2 class="section-title">Welcome to My Digital Space</h2>
+    <p style="text-align: center; max-width: 900px; margin: auto; font-size: 1.15rem;">I’m a technology architect with over 7 years of experience building digital ecosystems—ranging from dynamic websites and mobile apps to AI bots and cloud-native enterprise platforms. Passionate about solving real-world problems through technology and design excellence.</p>
+    <div class="cta">
+      <a href="contact.html">Let's Work Together</a>
     </div>
   </section>
 
-  <section class="projects">
-    <h2 class="section-title">Projects</h2>
+  <section>
+    <h2 class="section-title">Quick Overview</h2>
     <div class="grid">
-      <div class="card"><i class="fas fa-laptop-code"></i><h3>Personal Portfolio Website</h3><p>Responsive & modern portfolio hosted on GitHub Pages.</p></div>
-      <div class="card"><i class="fas fa-video"></i><h3>Movie Streaming Website</h3><p>Movie sharing platform with JS-based UI/UX effects.</p></div>
-      <div class="card"><i class="fas fa-dice"></i><h3>Dice Roller App</h3><p>Android app that uses Kotlin & vector graphics for gameplay.</p></div>
-      <div class="card"><i class="fas fa-bug"></i><h3>Cybersecurity Scanner</h3><p>Scans for basic website vulnerabilities using Python.</p></div>
-      <div class="card"><i class="fas fa-robot"></i><h3>AI Resume Analyzer</h3><p>Suggests resume improvements using OpenAI APIs.</p></div>
-      <div class="card"><i class="fas fa-microphone"></i><h3>Voice Notes Web App</h3><p>Voice-to-text notepad using Web Speech API + Firebase.</p></div>
+      <div class="card"><i class="fas fa-code"></i><h3>1490+ Projects Delivered</h3><p>From e-commerce & portfolio sites to SaaS dashboards, mobile apps & AI-based systems—across all major domains.</p></div>
+      <div class="card"><i class="fas fa-globe"></i><h3>Worldwide Recognition</h3><p>Clients from UAE, USA, UK, Canada, Pakistan, Germany & more.</p></div>
+      <div class="card"><i class="fas fa-certificate"></i><h3>Industry-Endorsed</h3><p>Meta, Google, IBM, Cisco, AWS, Microsoft & Coursera credentials.</p></div>
+      <div class="card"><i class="fas fa-toolbox"></i><h3>Top Tech Stack</h3><p>React, Next.js, TypeScript, Node.js, Firebase, Docker, Flutter, Python, GPT APIs, MongoDB, and more.</p></div>
+    </div>
+  </section>
+
+  <section class="feature-section">
+    <h2 class="section-title">Key Highlights</h2>
+    <ul>
+      <li>Specialized in building scalable front-end architectures and serverless backends.</li>
+      <li>Cybersecurity aware – implements secure coding, JWT, OAuth2, OWASP Top 10 principles.</li>
+      <li>Experienced in integrating LLMs (OpenAI, Claude, Gemini) and building GenAI solutions.</li>
+      <li>Expert in Figma prototyping, UI kits, wireframes & design systems.</li>
+      <li>Skilled in SEO, schema markup, and Google PageSpeed optimization.</li>
+      <li>Advanced DevOps pipelines with GitHub Actions, Netlify, Firebase, Docker & Vercel.</li>
+    </ul>
+  </section>
+
+  <section class="stats-section">
+    <h3>Performance & Achievements</h3>
+    <div class="stats-grid">
+      <div class="stat-box">🔥 14,000+ Hours of Development</div>
+      <div class="stat-box">🌐 35+ Countries Served</div>
+      <div class="stat-box">🏆 20+ Certifications Earned</div>
+      <div class="stat-box">💼 30+ Long-Term Clients</div>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Muhammad Umar Naheed | Designed with ❤ and Code</p>
-    <p>Email: umark.dev@gmail.com | GitHub: github.com/umark-dev</p>
+    <p>© 2025 Muhammad Umar Naheed | Crafted with Code, Creativity & Consistency 🚀</p>
+    <p>Email: umarnaheed@gmail.com | GitHub: github.com/umar-naheed</p>
   </footer>
 </body>
 </html>
+
