@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills | Muhammad Umar Naheed</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+    }
+    nav {
+      background-color: #203a43;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    nav a:hover {
+      color: #00ffff;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+    h2 {
+      font-size: 2.8rem;
+      text-align: center;
+      color: #203a43;
+      margin-bottom: 30px;
+      position: relative;
+    }
+    h2::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: #00ffff;
+      display: block;
+      margin: 12px auto 0;
+      border-radius: 4px;
+    }
+    .skill-category {
+      margin-bottom: 40px;
+      animation: fadeInUp 0.8s ease both;
+      transition: all 0.5s ease-in-out;
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .skill-category h3 {
+      color: #2c5364;
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+      border-left: 4px solid #00ffff;
+      padding-left: 10px;
+    }
+    .skill-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    .skill-list li {
+      background: #ffffff;
+      padding: 15px 20px;
+      border-radius: 8px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.07);
+      font-size: 1rem;
+      list-style: none;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    .skill-list li:hover {
+      transform: scale(1.03);
+      background-color: #e0f7fa;
+    }
+    .skill-list li::before {
+      content: '\f058'; /* check-circle icon */
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      margin-right: 10px;
+      color: #00bcd4;
+    }
+    .progress-bar {
+      height: 8px;
+      background-color: #ccc;
+      border-radius: 4px;
+      margin-top: 8px;
+      overflow: hidden;
+    }
+    .progress {
+      height: 100%;
+      background: linear-gradient(90deg, #00bcd4, #2c5364);
+      width: var(--progress, 70%);
+    }
+    footer {
+      background-color: #203a43;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+    .filter-bar {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .filter-bar button {
+      background-color: #00bcd4;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 10px 10px 0;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .filter-bar button:hover {
+      background-color: #0097a7;
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <h1>My Skillset</h1>
+    <p>Multi-Domain Expertise | Practical Implementation | Scalable Delivery</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h2>Technical & Creative Expertise</h2>
+
+        <div class="filter-bar">
+      <button onclick="filterSkills('all')">All</button>
+      <button onclick="filterSkills('programming')">💻 Programming</button>
+      <button onclick="filterSkills('frameworks')">📱 Frameworks</button> 
+      <button onclick="filterSkills('ai')">🧠 AI</button>
+      <button onclick="filterSkills('devops')">🔒 DevOps</button>
+      <button onclick="filterSkills('design')">🎨 Design</button>
+      <button onclick="filterSkills('tools')">🧰 Tools</button>
+      <button onclick="filterSkills('additional')">⚙️ Additional</button>
+
+    </div>
+
+    <div class="skill-category">
+      <h3>Core Programming</h3>
+      <ul class="skill-list">
+        <li>JavaScript (ES6+)</li>
+        <li>TypeScript</li>
+        <li>Python</li>
+        <li>Dart</li>
+        <li>Java</li>
+        <li>PHP</li>
+        <li>C/C++</li>
+        <li>Kotlin</li>
+        <li>Go (Golang)</li>
+        <li>Rust</li>
+        <li>Shell Scripting</li>
+        <li>Bash / Zsh</li>
+      </ul>
+    </div>
+
+    <div class="skill-category">
+      <h3>Web & Mobile Frameworks</h3>
+      <ul class="skill-list">
+        <li>React / Next.js</li>
+        <li>Node.js / Express.js</li>
+        <li>Flutter</li>
+        <li>Firebase</li>
+        <li>Vue.js</li>
+        <li>Tailwind / Bootstrap</li>
+        <li>React Native</li>
+        <li>Svelte / SvelteKit</li>
+        <li>Nuxt.js</li>
+        <li>Capacitor.js</li>
+      </ul>
+    </div>
+
+    <div class="skill-category">
+      <h3>AI & Generative Tools</h3>
+      <ul class="skill-list">
+        <li>OpenAI (GPT APIs)</li>
+        <li>Gemini / Claude / LLaMA</li>
+        <li>LangChain / RAG Systems</li>
+        <li>TensorFlow / Transformers</li>
+        <li>Prompt Engineering</li>
+        <li>Whisper / TTS / Vision AI</li>
+        <li>Google Cloud AI</li>
+        <li>HuggingFace / BERT / FastAI</li>
+      </ul>
+    </div>
+
+    <div class="skill-category">
+      <h3>Cybersecurity & DevOps</h3>
+      <ul class="skill-list">
+        <li>OAuth2 / JWT / OWASP</li>
+        <li>Docker / CI-CD / GitHub Actions</li>
+        <li>Linux / Ubuntu / CLI tools</li>
+        <li>SSL, HTTPS, Secure Headers</li>
+        <li>Monitoring & Logs</li>
+        <li>Penetration Testing (Basics)</li>
+        <li>Kubernetes (Basics)</li>
+        <li>Load Balancers / Nginx / Fail2ban</li>
+      </ul>
+    </div>
+
+    <div class="skill-category">
+      <h3>Design & Strategy</h3>
+      <ul class="skill-list">
+        <li>Figma / Adobe XD</li>
+        <li>Wireframes / UI Kits</li>
+        <li>UX Writing</li>
+        <li>Design Systems</li>
+        <li>SEO & Accessibility</li>
+        <li>Canva / Illustrator / Photoshop</li>
+        <li>Logo / Branding Design</li>
+        <li>Motion Graphics (After Effects)</li>
+      </ul>
+    </div>
+
+    <div class="skill-category">
+      <h3>Tools & Platforms</h3>
+      <ul class="skill-list">
+        <li>VS Code / Postman / Git</li>
+        <li>Vercel / Netlify / cPanel</li>
+        <li>MongoDB / MySQL / PostgreSQL</li>
+        <li>AWS / GCP / Azure</li>
+        <li>Shopify / WordPress</li>
+        <li>Notion / Slack / Trello / Jira</li>
+        <li>Replit / Glitch / CodePen</li>
+        <li>Zapier / Make (Integromat)</li>
+        <li>Fiverr / Upwork / LinkedIn Jobs</li>
+      </ul>
+    </div>
+
+      <div class="skill-category">
+      <h3>Additional Skills & Technologies</h3>
+      <ul class="skill-list">
+        <li>GraphQL / REST APIs</li>
+        <li>WebSockets / Real-time Apps</li>
+        <li>PWA (Progressive Web Apps)</li>
+        <li>Stripe / Razorpay / PayPal APIs</li>
+        <li>Headless CMS (Strapi, Sanity)</li>
+        <li>Web Scraping / BeautifulSoup</li>
+        <li>Automation with Selenium</li>
+        <li>LLM Fine-tuning (Basics)</li>
+        <li>Microservices Architecture</li>
+        <li>Agile / Scrum Methodologies</li>
+        <li>System Design Fundamentals</li>
+        <li>Custom Hooks & HOCs in React</li>
+        <li>Unit Testing (Jest, Mocha)</li>
+        <li>End-to-End Testing (Cypress)</li>
+        <li>Open Source Contributions</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+
+  </div>
+
+
+  <footer>
+    <p>© 2025 Muhammad Umar Naheed. All Rights Reserved.</p>
+    <p>Email: umarnaheed@gmail.com | GitHub: github.com/umar-naheed</p>
+  </footer>
+  <script>
+    function filterSkills(category) {
+      const categories = document.querySelectorAll('.skill-category');
+      categories.forEach(cat => {
+        const catText = cat.querySelector('h3').innerText.toLowerCase();
+        if (
+          category === 'all' ||
+          (category === 'programming' && catText.includes('programming')) ||
+          (category === 'frameworks' && catText.includes('framework')) ||
+          (category === 'ai' && catText.includes('ai')) ||
+          (category === 'devops' && catText.includes('devops')) ||
+          (category === 'design' && catText.includes('design')) ||
+          (category === 'tools' && (catText.includes('tools') || catText.includes('platform'))) ||
+          (category === 'additional' && catText.includes('additional'))
+        ) {
+          cat.style.display = 'block';
+        } else {
+          cat.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
