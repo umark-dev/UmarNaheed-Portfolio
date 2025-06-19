@@ -1,85 +1,54 @@
-```markdown
-# 👨‍💻 Muhammad Umar Naheed – Professional Portfolio
+# 🌐 Muhammad Umar Naheed — Professional Portfolio
 
-A full-featured, responsive, and multi-section portfolio website built using only **HTML**, **CSS**, and **JavaScript**. It highlights my expertise across web & mobile development, AI integrations, DevOps practices, and visual design—showcasing 100+ real-world projects, certifications, and testimonials.
+Welcome to my personal web portfolio! This site showcases my skills, projects, certifications, services, and testimonials — a central hub of my work in software development, AI integration, digital design, and tech consultancy.
 
----
+## 📁 Project Overview
 
-## 🌐 Live Portfolio
+This portfolio is built with only HTML, CSS, and JavaScript — no frameworks, no external build tools, and no dependencies. Everything is organized into standalone files for clarity and simplicity.
 
-🔗 [Visit Live Portfolio](https://umark-dev.github.io/UmarNaheed-Portfolio)  
-📧 Email: [umark.dev@gmail.com](mailto:umark.dev@gmail.com)
+## 📄 Live Pages
 
----
+- **Home** – Overview & introduction  
+- **About** – My academic and professional journey  
+- **Skills** – Categorized technical proficiencies  
+- **Projects** – 100+ Realistic projects across multiple domains  
+- **Certifications** – 20+ certificates from top institutions  
+- **Services** – Tech services I offer professionally  
+- **Testimonials** – Verified feedback from international clients  
+- **Contact** – Direct contact form + contact info
 
-## 📁 File Structure
+## 🎯 Key Features
 
-```
+- 💼 **Real Projects**: Includes 100+ real-world projects with descriptions  
+- 🛠️ **Skill Categories**: Web Dev, Mobile Apps, AI/ML, DevOps, Design, Automation  
+- 📃 **Certifications**: From Google, Meta, IBM, Microsoft, FreeCodeCamp & more  
+- 🌎 **Responsive Design**: Fully responsive layout across all pages  
+- 🔒 **No Frameworks**: No React, Vue, or Tailwind – built with pure HTML, CSS & JS  
+- 🌐 **SEO Optimized**: Structured HTML with proper heading levels and meta tags  
+- 🤝 **Client Testimonials**: 20+ testimonials from professionals at Google, AWS, Microsoft, IBM, etc.
 
-📂 UmarNaheed-Portfolio/
-├── index.html              # Home
-├── about.html              # About Me
-├── skills.html             # Skills with filtering
-├── projects.html           # 100+ Projects by category
-├── certifications.html     # 20+ Certifications
-├── services.html           # Offered services
-├── testimonials.html       # 25+ Client testimonials
-├── contact.html            # Contact form & links
-└── README.md
+## 📂 File Structure
 
-```
+/UmarNaheed-Portfolio/
+│
+├── index.html
+├── about.html
+├── skills.html
+├── projects.html
+├── certifications.html
+├── services.html
+├── testimonials.html
+├── contact.html
+├── README.md
 
----
 
-## 🚀 Features
+## 📧 Contact
 
-- ✅ 100% HTML, CSS, JS — No frameworks or external files
-- ✅ Fully responsive & mobile-optimized
-- ✅ Projects filtering by category
-- ✅ Professional certifications & services listed
-- ✅ Realistic client testimonials (20+)
-- ✅ No external dependencies (self-contained)
-
----
-
-## 🧠 Technologies Used
-
-- HTML5, CSS3, JavaScript (ES6+)
-- Font Awesome (via CDN)
-- Google Fonts (Poppins)
-- No libraries or build tools
-
----
-
-## 🔍 Pages Overview
-
-| Page               | Description                                                                 |
-|--------------------|-----------------------------------------------------------------------------|
-| `index.html`       | Landing page, personal summary, CTAs                                        |
-| `about.html`       | Career story, experience, vision                                            |
-| `skills.html`      | Interactive list of skills by category                                      |
-| `projects.html`    | Grid of 100 unique real-world projects                                      |
-| `certifications.html` | Display of 20+ professional certifications                              |
-| `services.html`    | List of offered freelance & consulting services                             |
-| `testimonials.html`| Verified testimonials from international clients                            |
-| `contact.html`     | Contact form, GitHub, and email details                                     |
+- **Email**: umark.dev@gmail.com  
+- **GitHub**: [github.com/umar-naheed](https://github.com/umar-naheed)  
+- **LinkedIn**: [linkedin.com/in/umarkdev](https://linkedin.com/in/umarkdev)
 
 ---
 
-## 📬 Contact Me
+> © 2025 Muhammad Umar Naheed. All rights reserved.
 
-- **Email:** [umark.dev@gmail.com](mailto:umark.dev@gmail.com)  
-- **GitHub:** [github.com/umark-dev](https://github.com/umark-dev)
-
----
-
-## 📝 License
-
-This project is licensed under the **MIT License**. You’re free to use, fork, or build upon it with proper attribution.
-
----
-
-### 🔧 Note
-
-This project is designed to be served directly by opening any `.html` file—no setup or server required.
-```
