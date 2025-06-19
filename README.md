@@ -1,95 +1,85 @@
-````markdown
-# 💼 Muhammad Umar Naheed — Developer Portfolio
+```markdown
+# 👨‍💻 Muhammad Umar Naheed – Professional Portfolio
 
-Welcome to my personal developer portfolio website! This is a fully responsive and professionally designed project that showcases my skills, projects, services, certifications, client testimonials, and contact information — built using only **HTML5 + CSS3 + JS (vanilla)**.
-
----
-
-## 🌐 Live Preview
-> If hosted, add your live preview link here:  
-**🔗 https://umarnaheed.dev/**
+A full-featured, responsive, and multi-section portfolio website built using only **HTML**, **CSS**, and **JavaScript**. It highlights my expertise across web & mobile development, AI integrations, DevOps practices, and visual design—showcasing 100+ real-world projects, certifications, and testimonials.
 
 ---
 
-## 📂 Project Structure
+## 🌐 Live Portfolio
 
-All files are located in the main folder (no external images or CSS/JS dependencies).
+🔗 [Visit Live Portfolio](https://umark-dev.github.io/UmarNaheed-Portfolio)  
+📧 Email: [umark.dev@gmail.com](mailto:umark.dev@gmail.com)
 
-```bash
-📁 Portfolio/
-├── index.html             # Landing/Home page
-├── about.html             # Bio, education, and background
-├── skills.html            # Technical & creative skillset
-├── projects.html          # 100+ categorized real-world projects
-├── certifications.html    # 20+ verified certifications (no images)
-├── services.html          # Services offered with pricing & features
-├── testimonials.html      # Real feedback from 20+ international clients
-├── contact.html           # Contact form with email & location info
-├── README.md              # This file
-````
+---
+
+## 📁 File Structure
+
+```
+
+📂 UmarNaheed-Portfolio/
+├── index.html              # Home
+├── about.html              # About Me
+├── skills.html             # Skills with filtering
+├── projects.html           # 100+ Projects by category
+├── certifications.html     # 20+ Certifications
+├── services.html           # Offered services
+├── testimonials.html       # 25+ Client testimonials
+├── contact.html            # Contact form & links
+└── README.md
+
+```
 
 ---
 
 ## 🚀 Features
 
-✅ Fully responsive layout
-✅ Minimal, modern, and elegant UI
-✅ Organized into multiple professional sections
-✅ No external JS or image dependencies
-✅ Enhanced semantic HTML with accessibility in mind
-✅ Cross-browser compatibility
-✅ Custom project filter buttons, form validation, and client feedback
+- ✅ 100% HTML, CSS, JS — No frameworks or external files
+- ✅ Fully responsive & mobile-optimized
+- ✅ Projects filtering by category
+- ✅ Professional certifications & services listed
+- ✅ Realistic client testimonials (20+)
+- ✅ No external dependencies (self-contained)
 
 ---
 
-## 🔧 Technologies Used
+## 🧠 Technologies Used
 
-* HTML5
-* CSS3
-* Vanilla JavaScript (inline only)
-* Google Fonts (Poppins)
-* Font Awesome Icons
-* Responsive Design (media queries & flexible grids)
+- HTML5, CSS3, JavaScript (ES6+)
+- Font Awesome (via CDN)
+- Google Fonts (Poppins)
+- No libraries or build tools
 
 ---
 
-## 📸 Screenshots
+## 🔍 Pages Overview
 
-> You can add your screenshots below using markdown:
-
-```
-![Home Page](screenshots/homepage.png)
-![Projects Page](screenshots/projects.png)
-![Testimonials](screenshots/testimonials.png)
-```
-
----
-
-## ✨ Credits
-
-This portfolio reflects the personal brand and experience of **Muhammad Umar Naheed** — a full-stack developer, AI enthusiast, designer, and digital consultant.
-
-Feel free to use this structure as a boilerplate for your own profile with proper credit.
+| Page               | Description                                                                 |
+|--------------------|-----------------------------------------------------------------------------|
+| `index.html`       | Landing page, personal summary, CTAs                                        |
+| `about.html`       | Career story, experience, vision                                            |
+| `skills.html`      | Interactive list of skills by category                                      |
+| `projects.html`    | Grid of 100 unique real-world projects                                      |
+| `certifications.html` | Display of 20+ professional certifications                              |
+| `services.html`    | List of offered freelance & consulting services                             |
+| `testimonials.html`| Verified testimonials from international clients                            |
+| `contact.html`     | Contact form, GitHub, and email details                                     |
 
 ---
 
 ## 📬 Contact Me
 
-📧 Email: [umark.dev@gmail.com](mailto:umark.dev@gmail.com)
-🌐 GitHub: [github.com/umar-naheed](https://github.com/umar-naheed)
-📍 Location: Pakistan (Available Worldwide)
+- **Email:** [umark.dev@gmail.com](mailto:umark.dev@gmail.com)  
+- **GitHub:** [github.com/umark-dev](https://github.com/umark-dev)
 
 ---
 
-## 📄 License
+## 📝 License
 
-This project is open for learning purposes.
-**Not for commercial resale or template selling without permission.**
+This project is licensed under the **MIT License**. You’re free to use, fork, or build upon it with proper attribution.
 
 ---
 
-## 🏁 Contribution
+### 🔧 Note
 
-🙌 If you'd like to collaborate, improve UI/UX, or suggest enhancements — feel free to fork and raise a pull request!
-
+This project is designed to be served directly by opening any `.html` file—no setup or server required.
 ```
