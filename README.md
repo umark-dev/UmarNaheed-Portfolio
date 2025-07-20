@@ -12,7 +12,7 @@ This portfolio showcases my skills, certifications, real-world projects, and aca
 ## 📌 About Me
 
 ```txt
-Cybersecurity Trainee | Linux Enthusiast | Python/Bash Automation | Secure Web Dev | MERN Learner
+Aspiring Cybersecurity Specialist with Linux Expertise | Developer of Secure Web & Automation Solutions | MERN Stack Explorer
 ```
 * 🐧 Experienced with Ubuntu, Kali, and ethical hacking environments
 * 🔐 Trained in network scanning, SQLi/XSS/CSRF defense, SOC tools, and hardening
