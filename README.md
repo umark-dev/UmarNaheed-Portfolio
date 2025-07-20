@@ -163,5 +163,3 @@ Google Apps Script, Gmail API, LAN Networking, Canva, Sheets, Forms
 ---
 
 > © 2025 Muhammad Umar Naheed. Built with 💻 Secured with 🛡️ Shared with ❤️
-
-```
