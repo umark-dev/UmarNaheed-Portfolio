@@ -1,16 +1,19 @@
-````markdown
-# 🌐 Muhammad Umar Naheed — Cybersecurity, Automation & IT Portfolio
-
-Welcome to the official portfolio of **Muhammad Umar Naheed**, an aspiring cybersecurity professional and digital solutions builder from **Bhalwal, Pakistan**. My work bridges the gap between **system security**, **automation**, and **web innovation**, emphasizing **hands-on implementation**, **Linux mastery**, and **secure development practices**.
-
-Built entirely with **pure HTML, CSS, and JavaScript**, this portfolio demonstrates not just my skills but also my commitment to **simplicity, speed, and security**.
 
 ---
 
-## 👨‍💻 About Me
+# 🌐 Muhammad Umar Naheed — Cybersecurity & IT Portfolio
+
+Welcome to my official portfolio repository! I'm **Muhammad Umar Naheed**, a passionate and security-driven IT professional from **Bhalwal, Pakistan**, with a strong foundation in **cybersecurity**, **Linux system administration**, **Python/Bash automation**, and **secure web development**.
+
+This portfolio showcases my skills, certifications, real-world projects, and academic journey — built entirely with **pure HTML, CSS, and JavaScript**, emphasizing performance, security, and simplicity.
+
+---
+
+## 📌 About Me
 
 ```txt
-Cybersecurity Trainee | Linux Power User | Python/Bash Automation | Web Security | MERN Learner
+Cybersecurity Trainee | Linux Enthusiast | Python/Bash Automation | Secure Web Dev | MERN Learner
+```
 ````
 
 * 🐧 Experienced with Ubuntu, Kali, and ethical hacking environments
