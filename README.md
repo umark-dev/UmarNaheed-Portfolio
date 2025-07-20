@@ -14,8 +14,6 @@ This portfolio showcases my skills, certifications, real-world projects, and aca
 ```txt
 Cybersecurity Trainee | Linux Enthusiast | Python/Bash Automation | Secure Web Dev | MERN Learner
 ```
-````
-
 * 🐧 Experienced with Ubuntu, Kali, and ethical hacking environments
 * 🔐 Trained in network scanning, SQLi/XSS/CSRF defense, SOC tools, and hardening
 * 🛠️ Created real-world Python/Bash scripts for logs, alerting, scanning & reporting
