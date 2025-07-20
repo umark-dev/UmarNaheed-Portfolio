@@ -1,173 +1,166 @@
-# 🌐 Muhammad Umar Naheed — Cybersecurity & Tech Automation Portfolio
+````markdown
+# 🌐 Muhammad Umar Naheed — Cybersecurity, Automation & IT Portfolio
 
-Welcome to my official digital portfolio!
-I’m **Muhammad Umar Naheed**, a **Google-Certified Cybersecurity & Automation Specialist** from **Bhalwal, Pakistan**, blending the disciplines of **secure software engineering**, **Linux system administration**, **Python/Bash scripting**, **prompt engineering**, and **MERN-stack development**.
+Welcome to the official portfolio of **Muhammad Umar Naheed**, an aspiring cybersecurity professional and digital solutions builder from **Bhalwal, Pakistan**. My work bridges the gap between **system security**, **automation**, and **web innovation**, emphasizing **hands-on implementation**, **Linux mastery**, and **secure development practices**.
 
-> ⚡ Built with pure **HTML, CSS & JavaScript** — optimized for performance, clarity, and no framework dependencies.
+Built entirely with **pure HTML, CSS, and JavaScript**, this portfolio demonstrates not just my skills but also my commitment to **simplicity, speed, and security**.
 
 ---
 
-## 🧠 About Me
+## 👨‍💻 About Me
 
 ```txt
-Cybersecurity & Automation Specialist | Google-Certified | Linux | Python/Bash | Prompt Engineering | MERN Stack | App Dev | 1490+ Secure Builds
-```
+Cybersecurity Trainee | Linux Power User | Python/Bash Automation | Web Security | MERN Learner
+````
 
-* 🔒 **Google-Certified Cybersecurity Trainee** (SOC, SIEM, IR, Threat Detection)
-* 🐧 **Linux System Admin** – SSH, UFW, cron, automation, log analysis
-* 🐍 **Python/Bash Automation** – Tools for Nmap parsing, PDF reporting, brute-force detection
-* 🧠 **Prompt Engineer** – Prompt design for AI agents, resume writers, and security automation (ChatGPT, Gemini)
-* 🌐 **MERN Stack Developer** – React.js UI, Node.js routing, Express backend logic
-* 📲 **App Developer** – Mobile UI Design & Prototyping using Kotlin & XML, with Firebase Integrations
-* 🛡️ **Security Researcher** – Hands-on labs: DVWA, OWASP Top 10, Wireshark, Burp Suite
-* 👨‍🏫 **Mentor** – Guided peers in labs, networks, Git, and Linux terminal basics
-* 🏏 **Fast Bowling All-Rounder** – Former college-level cricket team captain
+* 🐧 Experienced with Ubuntu, Kali, and ethical hacking environments
+* 🔐 Trained in network scanning, SQLi/XSS/CSRF defense, SOC tools, and hardening
+* 🛠️ Created real-world Python/Bash scripts for logs, alerting, scanning & reporting
+* 🌍 Built academic and production-ready web tools for automation and monitoring
+* 🚀 Currently exploring MERN stack development and DevSecOps concepts
+* 🎓 Peer mentor & CR at University of Education — supporting peers in tech growth
+* 🏏 Leadership skills honed as a former cricket team captain
 
 ---
 
-## 🧾 Certifications
+## 🧠 Portfolio Contents
 
-### ✅ **Google Cybersecurity Professional Certificate**
+| Section          | Description                                                  |
+| ---------------- | ------------------------------------------------------------ |
+| `Home`           | Brief profile, summary, and identity                         |
+| `About`          | Education, experience, goals, and soft skills                |
+| `Skills`         | Categorized overview of my technical skill set               |
+| `Projects`       | Self-built cybersecurity and automation tools                |
+| `Certifications` | Verified credentials from Google, HP LIFE, Simplilearn, etc. |
+| `Services`       | My freelance & technical offerings                           |
+| `Testimonials`   | Internship & professional reviews                            |
+| `Contact`        | How to reach me & social presence                            |
 
-*(9-Course Coursera Specialization)*
-Covers: Linux for Security • SOC Monitoring • SIEM • Risk Management • IR • OSINT • Python
+---
 
-### ✅ **Prompt Engineering** — *Fazal Qadir Khan Institute*
+## 🏅 Certifications
 
-* AI-assisted automation
-* Resume writing prompts
-* GitHub Copilot scripting
+### ✅ **Google Cybersecurity Certificate** (Coursera)
 
-### ✅ **HP LIFE Global Skills**
+A comprehensive 9-course specialization:
+
+* Linux, SQL, and Network Security Essentials
+* SIEM, Threat Modeling, Risk Management
+* SOC Tools, Incident Response & Automation
+* Python scripting for security operations
+
+### ✅ **HP LIFE Certifications**
 
 * Cybersecurity Awareness
-* AI Fundamentals
+* AI for Beginners
 * Data Science & Analytics
 
 ### ✅ **Simplilearn SkillUP**
 
-* MERN Stack Full Training (MongoDB, React.js, Express.js, Node.js)
+* MERN Stack Development
+* MongoDB, React, Node.js & Express
 
-### ✅ **CodeWithHarry & Azad Chaiwala Series**
+### ✅ **Project-Based Learning**
 
-* Sigma Web Dev Bootcamp
-* Python Ultimate Guide
-* Full MERN Stack
-* Cybersecurity Crash Course
-
----
-
-## 📦 Projects (Featured)
-
-| 🔧 Project Name               | 🌐 Description                                                 | ⚙️ Tools Used                    |
-| ----------------------------- | -------------------------------------------------------------- | -------------------------------- |
-| Linux Hardening Toolkit       | Automated Linux secure config & hardening                      | Bash, Fail2Ban, SSH, UFW         |
-| Nmap → PDF Report Generator   | Python-based scanner + styled PDF with scan data               | Python, pdfkit, subprocess, Nmap |
-| Student Mgmt System + SMS API | Dashboard built with Sheets, Forms, and custom APIs            | Google Apps Script, Gmail API    |
-| OMR Sheet Scanner             | Web app that scans marked OMR circles                          | HTML5 Canvas, JavaScript         |
-| AI Prompt Image Generator     | Web UI that fetches OpenAI image completions on prompt input   | JS, CSS, OpenAI API              |
-| DVWA Simulation Lab           | XSS, SQLi, CSRF & patching hands-on                            | Burp Suite, PHP, MySQL           |
-| Log & SSH Monitor Tool        | Alerts on suspicious log entries, detects brute-force attempts | Python, Linux logs, Regex        |
+* *Azad Chaiwala* — MERN & Cybersecurity
+* *CodeWithHarry* — HTML, CSS, JS, PHP, Python
+* *Prompt Engineering* – AI-driven automation & scripting (Fazal Qadir Khan Institute)
 
 ---
 
-## 🛠️ Skills Summary Table
+## 🛠️ Real-World Projects
 
-| Domain             | Tools / Technologies                                     |
-| ------------------ | -------------------------------------------------------- |
-| **Cybersecurity**  | Nmap, Wireshark, DVWA, Burp, Fail2Ban, OWASP, MITM, SIEM |
-| **Linux Admin**    | Ubuntu, Kali, UFW, SSH, Bash, crontab, logrotate         |
-| **Scripting**      | Python (subprocess, re), Bash, PDFKit, API automation    |
-| **Web Dev**        | HTML, CSS, JavaScript, PHP, MySQL, React.js, Express.js  |
-| **App Dev**        | Kotlin, XML, Firebase, UI/UX, Mobile Layouts (Responsive Design)      |
-| **Cloud Tools**    | Google Sheets/Forms/Script, GitHub, Git, XAMPP           |
-| **Prompt Eng.**    | ChatGPT, Copilot, Gemini, Resume AI, Security Assistants |
-| **Docs & Reports** | SOPs, Audit Reports, Canva Infographics, Presentations   |
-
----
-
-## 🧑‍🏫 Leadership & Volunteering
-
-* 🧠 **Class Representative** – School to University (Muslim Hands, EFA, PGC, UCP, UoE)
-* 🧑‍💻 **Peer Mentor** – Trained juniors in web dev, Linux CLI, Wireshark, TryHackMe
-* 🛡️ **Cyber Awareness Advocate** – Designed posters, hosted basic training during internships
+| Project                          | Purpose                                                    | Tools/Tech                 |
+| -------------------------------- | ---------------------------------------------------------- | -------------------------- |
+| 🔐 Linux Hardening Toolkit       | Auto-harden Ubuntu using Bash scripts & UFW/Fail2Ban       | Bash, SSH, UFW, Linux      |
+| 📊 Nmap to PDF Scanner           | Scan IP ranges and generate PDF security reports           | Python, Nmap, pdfkit       |
+| 🧾 Digital Student Record System | Attendance + grading system for OPE School                 | Google Apps Script, Sheets |
+| 🎯 OMR Web Scanner               | Browser-based OMR sheet detection for evaluation           | HTML5 Canvas, JS           |
+| 🌐 DVWA Lab Exercises            | Practiced & patched SQLi, XSS, CSRF, brute force attacks   | DVWA, Burp Suite, MySQL    |
+| 🚨 SSH Log Pattern Alert         | Real-time detection of brute-force and unauthorized logins | Python, Regex, Fail2Ban    |
+| 🧠 AI Image Prompt App           | Fetch AI images via OpenAI API and display on frontend     | JavaScript, OpenAI API     |
 
 ---
 
-## 📚 Education
+## 🧠 Skills Snapshot
 
-**BS in Information Technology (Post-ADP)**
-*University of Education, Lahore – Aug 2024 – Present*
-Focus: Cybersecurity, Network Protocols, Digital Forensics
-
-**ADP in Computer Science**
-*University of Central Punjab, Bhalwal – Nov 2022 – Jul 2024*
-Focus: Web Dev, Databases, Operating Systems, Scripting
-
----
-
-## 👨‍💼 Internship Experience
-
-### **IT Intern – Digital Transformation & Cybersecurity**
-
-**OPE School System, Bhalwal** | *June 2025 – Present*
-
-As an IT Intern, I played a key role in automating internal processes, enhancing data security, and raising cybersecurity awareness across the institution.
-
-#### ✅ **Key Contributions:**
-
-* 📊 **Digitized Manual Workflows:** Converted paper-based records into a dynamic Google Drive ecosystem with secure access controls.
-* 📲 **Barcode-based Attendance System:** Developed a streamlined attendance tracking system using barcode technology and integrated SMS alerts for absentees.
-* 🧑‍🏫 **Faculty Training:** Conducted training sessions for staff on Google Sheets, Forms, Drive, and cybersecurity best practices.
-* 📈 **Automated Dashboards:** Created real-time academic and attendance dashboards using Google Apps Script and Gmail API.
-* 🔐 **Cybersecurity Awareness:** Designed and distributed infographics/posters, and led awareness sessions on common threats and digital hygiene.
-
-#### 🛠 **Technologies Used:**
-
-Google Apps Script, Gmail API, SMS Gateway API, Google Sheets & Forms, LAN-based Sharing, Canva
+| Domain                   | Tools & Technologies                                             |
+| ------------------------ | ---------------------------------------------------------------- |
+| 🔒 Cybersecurity         | DVWA, Wireshark, Burp Suite, Fail2Ban, OSINT, SQLi, XSS, CSRF    |
+| 🐧 Linux Admin           | Ubuntu, Kali, crontab, SSH, UFW, permissions, auditd             |
+| ⚙️ Automation            | Python (subprocess, re, os), Bash, cron, PDF & CSV automation    |
+| 🌐 Web Dev               | HTML, CSS, JS, PHP, MySQL, React.js, Node.js, Express.js         |
+| 🧠 AI/Prompt Engineering | ChatGPT, GitHub Copilot, OpenAI, Regex-based input sanitization  |
+| 📊 Data Handling         | MongoDB (beginner), MySQL, Sheets/Forms, data sanitization       |
+| 📤 DevOps & Hosting      | GitHub, XAMPP, Netlify, Google Workspace                         |
+| 📝 Documentation         | SOPs, technical guides, audit logs, infographics (Canva, Notion) |
 
 ---
 
+## 🎓 Education
 
-## 📁 This Portfolio Includes
+### 🎓 BS IT (Post-ADP) — *Ongoing*
 
-| Page               | Description                              |
-| ------------------ | ---------------------------------------- |
-| **Home**           | Intro, headline, achievements            |
-| **About**          | Bio, education, journey                  |
-| **Skills**         | Technical domains and tools summary      |
-| **Projects**       | GitHub-linked projects with explanations |
-| **Certifications** | Google, HP, Simplilearn, YouTube Series  |
-| **Services**       | Freelance and academic tech solutions    |
-| **Testimonials**   | Client and peer feedback                 |
-| **Contact**        | Direct info and social links             |
+**University of Education, Lahore (2024–Present)**
+
+* Courses: Secure Web Dev, InfoSec, Networks, System Analysis
+
+### 🎓 Associate Degree in Computer Science
+
+**University of Central Punjab, Bhalwal (2022–2024)**
+
+* Projects: Web Systems, Python Apps, Databases, OS Concepts
 
 ---
 
-## 📬 Contact Info
+## 💼 Internship Experience
 
-| Platform     | Link                                                           |
+### 🔧 IT Intern — *OPE School System, Bhalwal* (Jun 2025 – Present)
+
+> Digitally transformed internal systems using automation tools.
+
+* Migrated attendance & grading to Google Sheets + SMS alerts
+* Developed auto-grading & visual dashboards
+* Deployed barcode-based entry monitoring system
+* Conducted IT training workshops & cybersecurity awareness sessions
+* Created posters, reports, and SOPs for IT operations
+
+**Tools Used:**
+Google Apps Script, Gmail API, LAN Networking, Canva, Sheets, Forms
+
+---
+
+## 🧑‍🏫 Leadership & Mentorship
+
+* 🏫 **Class Representative** — School, College, University
+* 💬 **Peer Mentor** — Helped juniors with DVWA labs, Bash scripting, and network concepts
+* 🛡️ **Cyber Awareness Advocate** — Conducted informal cybersecurity sessions for faculty
+
+---
+
+## 💡 What Sets Me Apart?
+
+✅ Build actual tools, not just theory
+✅ Strong grip on CLI, Linux, and automation workflows
+✅ Document processes clearly (great for teams & clients)
+✅ Fast learner with habit of continuous upskilling
+✅ Confident presenter and responsible leader
+
+---
+
+## 📬 Contact Me
+
+| Platform     | Info                                                           |
 | ------------ | -------------------------------------------------------------- |
-| 📍 Location  | Bhalwal, Pakistan                                              |
-| 📞 Phone     | +92 345 3500316                                                |
-| ✉️ Email     | [khanumer2003@gmail.com](mailto:khanumer2003@gmail.com)        |
-| 🔗 GitHub    | [github.com/umark-dev](https://github.com/umark-dev)           |
-| 🔗 LinkedIn  | [linkedin.com/in/umarx-dev](https://linkedin.com/in/umarx-dev) |
+| 🌍 Location  | Bhalwal, Pakistan                                              |
+| 📧 Email     | [khanumer2003@gmail.com](mailto:khanumer2003@gmail.com)        |
+| 📞 WhatsApp  | [+92 345 3500316](https://wa.me/923453500316)                  |
+| 💼 LinkedIn  | [linkedin.com/in/umarx-dev](https://linkedin.com/in/umarx-dev) |
+| 🧑‍💻 GitHub | [github.com/umark-dev](https://github.com/umark-dev)           |
 | 🌐 Portfolio | [umar-naheed.netlify.app](https://umar-naheed.netlify.app)     |
 
 ---
 
-## 🧩 Extras
+> © 2025 Muhammad Umar Naheed. Built with 💻 Secured with 🛡️ Shared with ❤️
 
-> ✅ **1490+ completed projects** across web, mobile, automation & AI
-> 🔐 **Security-first mindset** — code, docs, and deployments
-> 💬 Fluent communicator with tech & non-tech teams
-> 📈 Fast learner, growth-focused mindset
-> 🎨 Design-aware developer — not just function, but form too
-
----
-
-> © 2025 Muhammad Umar Naheed
-> Crafted with 💻 code, secured with 🛡️ skills, and built with ❤️ passion.
-
----
+```
