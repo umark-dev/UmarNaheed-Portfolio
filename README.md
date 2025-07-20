@@ -18,9 +18,9 @@ Cybersecurity & Automation Specialist | Google-Certified | Linux | Python/Bash |
 * 🐍 **Python/Bash Automation** – Tools for Nmap parsing, PDF reporting, brute-force detection
 * 🧠 **Prompt Engineer** – Prompt design for AI agents, resume writers, and security automation (ChatGPT, Gemini)
 * 🌐 **MERN Stack Developer (Beginner+)** – React.js UI, Node.js routing, Express backend logic
-* 📲 **App Developer** – Mobile UI design & prototyping, Firebase integrations
+* 📲 **App Developer** – Mobile UI Design & Prototyping using Kotlin & XML, with Firebase Integrations
 * 🛡️ **Security Researcher** – Hands-on labs: DVWA, OWASP Top 10, Wireshark, Burp Suite
-* 👨‍🏫 **Mentor & CR** – Guided peers in labs, networks, Git, and Linux terminal basics
+* 👨‍🏫 **Mentor** – Guided peers in labs, networks, Git, and Linux terminal basics
 * 🏏 **Fast Bowling All-Rounder** – Former college-level cricket team captain
 
 ---
