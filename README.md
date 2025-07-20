@@ -108,13 +108,26 @@ Focus: Web Dev, Databases, Operating Systems, Scripting
 
 ## 👨‍💼 Internship Experience
 
-**IT Intern – Digital Transformation & Cybersecurity**
-*OPE School System – June 2025 to Present*
+### **IT Intern – Digital Transformation & Cybersecurity**
 
-✅ Built digital dashboards, barcode-based systems, faculty training, and cyber posters.
-✅ Tech used: Google Apps Script, Gmail API, SMS API, Sheets, Canva
+**OPE School System, Bhalwal** | *June 2025 – Present*
+
+As an IT Intern, I played a key role in automating internal processes, enhancing data security, and raising cybersecurity awareness across the institution.
+
+#### ✅ **Key Contributions:**
+
+* 📊 **Digitized Manual Workflows:** Converted paper-based records into a dynamic Google Drive ecosystem with secure access controls.
+* 📲 **Barcode-based Attendance System:** Developed a streamlined attendance tracking system using barcode technology and integrated SMS alerts for absentees.
+* 🧑‍🏫 **Faculty Training:** Conducted training sessions for staff on Google Sheets, Forms, Drive, and cybersecurity best practices.
+* 📈 **Automated Dashboards:** Created real-time academic and attendance dashboards using Google Apps Script and Gmail API.
+* 🔐 **Cybersecurity Awareness:** Designed and distributed infographics/posters, and led awareness sessions on common threats and digital hygiene.
+
+#### 🛠 **Technologies Used:**
+
+Google Apps Script, Gmail API, SMS Gateway API, Google Sheets & Forms, LAN-based Sharing, Canva
 
 ---
+
 
 ## 📁 This Portfolio Includes
 
@@ -158,5 +171,3 @@ Focus: Web Dev, Databases, Operating Systems, Scripting
 > Crafted with 💻 code, secured with 🛡️ skills, and built with ❤️ passion.
 
 ---
-
-Let me know if you'd like this exported as a markdown `.md` file or uploaded to your GitHub repo directly.
