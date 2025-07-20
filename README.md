@@ -1,7 +1,3 @@
-Absolutely! Here's the upgraded, professional, and **power-packed version** of your GitHub README portfolio, now reflecting **your Prompt Engineering certification**, **web/app dev**, and **Google-certified cybersecurity credentials** in a polished and recruiter-ready format:
-
----
-
 # 🌐 Muhammad Umar Naheed — Cybersecurity & Tech Automation Portfolio
 
 Welcome to my official digital portfolio!
