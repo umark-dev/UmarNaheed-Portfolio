@@ -42,7 +42,7 @@ Covers: Linux for Security • SOC Monitoring • SIEM • Risk Management • I
 
 * Cybersecurity Awareness
 * AI Fundamentals
-* Data Analysis Tools
+* Data Science & Analysis
 
 ### ✅ **Simplilearn SkillUP**
 
