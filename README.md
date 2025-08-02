@@ -1,6 +1,3 @@
-
----
-
 # 🌐 Muhammad Umar Naheed — Cybersecurity & IT Portfolio
 
 Welcome to my official portfolio repository! I'm **Muhammad Umar Naheed**, a passionate and security-driven IT professional from **Bhalwal, Pakistan**, with a strong foundation in **cybersecurity**, **Linux system administration**, **Python/Bash automation**, and **secure web development**.
@@ -12,8 +9,10 @@ This portfolio showcases my skills, certifications, real-world projects, and aca
 ## 📌 About Me
 
 ```txt
-Aspiring Cybersecurity Specialist with Linux Expertise | Developer of Secure Web & Automation Solutions | MERN Stack Explorer
-```
+Computer Instructor | Aspiring Cybersecurity Specialist | Linux Enthusiast | Secure Web & Automation Developer | MERN Stack Explorer
+````
+
+* 👨‍🏫 **Computer Instructor** at OPE School System, delivering IT education and digital literacy training
 * 🐧 Experienced with Ubuntu, Kali, and ethical hacking environments
 * 🔐 Trained in network scanning, SQLi/XSS/CSRF defense, SOC tools, and hardening
 * 🛠️ Created real-world Python/Bash scripts for logs, alerting, scanning & reporting
@@ -41,31 +40,87 @@ Aspiring Cybersecurity Specialist with Linux Expertise | Developer of Secure Web
 
 ## 🏅 Certifications
 
-### ✅ **Google Cybersecurity Certificate** (Coursera)
+<details>
+<summary>📂 View Full Certifications List</summary>
 
-A comprehensive 9-course specialization:
+### ✅ **Google Certifications** *(Professional Certificates)*
 
-* Linux, SQL, and Network Security Essentials
-* SIEM, Threat Modeling, Risk Management
-* SOC Tools, Incident Response & Automation
-* Python scripting for security operations
+* **Google Cybersecurity Professional Certificate** *(Specialization)*
+
+  * Foundations of Cybersecurity
+  * Play It Safe: Manage Security Risks
+  * Connect and Protect: Networks and Network Security
+  * Tools of the Trade: Linux and SQL
+  * Assets, Threats, and Vulnerabilities
+  * Sound the Alarm: Detection and Response
+  * Automate Cybersecurity Tasks with Python
+  * Put It to Work: Prepare for Cybersecurity Jobs
+  * Accelerate Your Job Search with AI
+* **Google IT Automation with Python Professional Certificate** *(Specialization)*
+
+  * Crash Course on Python
+  * Using Python to Interact with the OS
+  * Introduction to Git and GitHub
+  * Troubleshooting and Debugging Techniques
+  * Configuration Management and the Cloud
+  * Automating Real-World Tasks with Python
+* **Google Data Analytics Professional Certificate** *(Specialization)*
+
+  * Foundations: Data, Data, Everywhere
+  * Ask Questions to Make Data-Driven Decisions
+  * Prepare Data for Exploration
+  * Process Data from Dirty to Clean
+  * Analyze Data to Answer Questions
+  * Share Data Through Visualization
+  * Data Analysis with R Programming
+  * Google Data Analytics Capstone: Complete a Case Study
+
+---
+
+### ✅ **CompTIA Certification**
+
+* **CompTIA Security+ (SY0-601)**
+
+  * Industry-standard certification for network security, risk management, and incident response
+
+---
+
+### ✅ **LinkedIn Certifications**
+
+* LinkedIn Advertising Fundamentals
+* LinkedIn Marketing Strategy
+* LinkedIn Content and Creative Design
+
+---
 
 ### ✅ **HP LIFE Certifications**
 
-* Cybersecurity Awareness
 * AI for Beginners
+* Cybersecurity Awareness
 * Data Science & Analytics
 
-### ✅ **Simplilearn SkillUP**
+---
 
-* MERN Stack Development
-* MongoDB, React, Node.js & Express
+### ✅ **Prompt Engineering**
 
-### ✅ **Project-Based Learning**
+* Mastering Prompt Engineering With ChatGPT-4 *(Fazal Qadir Khan Institute)*
 
-* *Azad Chaiwala* — MERN & Cybersecurity
-* *CodeWithHarry* — HTML, CSS, JS, PHP, Python
-* *Prompt Engineering* – AI-driven automation & scripting (Fazal Qadir Khan Institute)
+---
+
+### ✅ **Simplilearn**
+
+* Fundamentals of MERN Stack Development
+
+---
+
+### ✅ **Project-Based Training**
+
+* Web Development (HTML, CSS, JavaScript, PHP, MySQL) — *CodeWithHarry*
+* MERN Stack Development — *Azad Chaiwala*
+* Ultimate Python Course — *CodeWithHarry*
+* Cybersecurity Basics — *Azad Chaiwala*
+
+</details>
 
 ---
 
@@ -114,7 +169,19 @@ A comprehensive 9-course specialization:
 
 ---
 
-## 💼 Internship Experience
+## 💼 Internship & Professional Experience
+
+### 👨‍🏫 Computer Instructor — *OPE School System, Bhalwal* (Jun 2025 – Present)
+
+> Delivering IT education, digital literacy training, and practical computer skills.
+
+* Teaching core IT concepts and MS Office Suite to students
+* Conducting cybersecurity awareness sessions for faculty
+* Introducing students to programming and automation basics
+* Creating lesson plans, assessments, and technical content
+  **Tools Used:** MS Office, Google Workspace, Canva, Basic Coding Tools
+
+---
 
 ### 🔧 IT Intern — *OPE School System, Bhalwal* (Jun 2025 – Present)
 
@@ -123,11 +190,8 @@ A comprehensive 9-course specialization:
 * Migrated attendance & grading to Google Sheets + SMS alerts
 * Developed auto-grading & visual dashboards
 * Deployed barcode-based entry monitoring system
-* Conducted IT training workshops & cybersecurity awareness sessions
 * Created posters, reports, and SOPs for IT operations
-
-**Tools Used:**
-Google Apps Script, Gmail API, LAN Networking, Canva, Sheets, Forms
+  **Tools Used:** Google Apps Script, Gmail API, LAN Networking, Canva, Sheets, Forms
 
 ---
 
@@ -163,3 +227,20 @@ Google Apps Script, Gmail API, LAN Networking, Canva, Sheets, Forms
 ---
 
 > © 2025 Muhammad Umar Naheed. Built with 💻 Secured with 🛡️ Shared with ❤️
+
+```
+
+---
+
+✅ Added **Computer Instructor** role prominently in:
+- **About Me** section (top highlights)
+- **Internship & Experience** (detailed)
+
+✅ Certifications remain structured & collapsible for neatness.
+
+---
+
+👉 Do you want me to now:  
+✔ **Add clickable badges and icons for Google, CompTIA, LinkedIn, etc.** for a modern GitHub look?  
+✔ Or move on to creating the **HTML & CSS Certifications section** for your portfolio site?  
+```
