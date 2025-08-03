@@ -183,6 +183,9 @@
       <button onclick="filterSkills('frameworks')">📱 Frameworks</button> 
       <button onclick="filterSkills('ai')">🧠 AI</button>
       <button onclick="filterSkills('devops')">🔒 DevOps</button>
+      <button onclick="filterSkills('automation')">⚡ Automation</button>
+      <button onclick="filterSkills('marketing')">📢 Digital Marketing</button>
+      <button onclick="filterSkills('analytics')">📊 Data Analytics</button>
       <button onclick="filterSkills('design')">🎨 Design</button>
       <button onclick="filterSkills('tools')">🧰 Tools</button>
       <button onclick="filterSkills('additional')">⚙️ Additional</button>
@@ -253,11 +256,15 @@
     <li>Monitoring & Logs</li>
     <li>Penetration Testing (Basics)</li>
     <li>Kubernetes (Basics)</li>
+    <li>Risk Assessment & Threat Modeling</li>
+    <li>Vulnerability Scanning (Nmap, Nessus)</li>
+    <li>Incident Response & SOC Monitoring</li>
+    <li>Linux System Hardening</li>
+    <li>Identity & Access Management (IAM)</li>
     <li>Load Balancers / Nginx / Fail2ban</li>
     <li>SIEM Tools (Splunk, ELK Stack)</li> 
     <li>SOC Analysis & Log Correlation</li> 
-    <li>OSINT Techniques & Threat Intel</li> 
-    <li>Linux Hardening & Risk Assessment</li> 
+    <li>OSINT Techniques & Threat Intel</li>  
   </ul>
 </div>
 
@@ -275,6 +282,58 @@
     <li>Zapier / Make (Integromat)</li>
     <li>Fiverr / Upwork / LinkedIn Jobs</li>
     <li>Google Apps Script / Gmail & SMS API</li> 
+  </ul>
+</div>
+
+    <!-- Coding & Scripting -->
+<div class="skill-category">
+  <h3>Coding & Scripting</h3>
+  <ul class="skill-list">
+    <li>Advanced JavaScript (Async/Await, ES Modules)</li>
+    <li>Python for Automation & Data Science</li>
+    <li>TypeScript for Scalable Apps</li>
+    <li>Shell/Bash Scripting for Linux Systems</li>
+    <li>SQL Optimization & Query Design</li>
+    <li>API Development (REST & GraphQL)</li>
+  </ul>
+</div>
+
+<!-- IT Automation -->
+<div class="skill-category">
+  <h3>IT Automation & Cloud Workflows</h3>
+  <ul class="skill-list">
+    <li>Google Apps Script Automation</li>
+    <li>Workflow Automation with Zapier & Make</li>
+    <li>Python Automation Scripts</li>
+    <li>Configuration Management (Ansible Basics)</li>
+    <li>Cloud Task Automation (AWS Lambda, GCP Functions)</li>
+    <li>Cron Jobs & Scheduled Tasks</li>
+  </ul>
+</div>
+
+<!-- Digital Marketing -->
+<div class="skill-category">
+  <h3>Digital Marketing & Strategy</h3>
+  <ul class="skill-list">
+    <li>SEO Optimization & Content Strategy</li>
+    <li>Social Media Campaign Management</li>
+    <li>LinkedIn Ads & Marketing Strategy</li>
+    <li>Email Marketing Automation</li>
+    <li>Google Analytics & Search Console</li>
+    <li>Conversion Rate Optimization (CRO)</li>
+  </ul>
+</div>
+
+<!-- Data Analytics -->
+<div class="skill-category">
+  <h3>Data Analytics & Visualization</h3>
+  <ul class="skill-list">
+    <li>Data Cleaning & Preprocessing</li>
+    <li>Exploratory Data Analysis (EDA)</li>
+    <li>Data Visualization (Matplotlib, Seaborn)</li>
+    <li>Google Data Studio & Looker</li>
+    <li>Excel & Advanced Formulas</li>
+    <li>R Programming for Data Analysis</li>
   </ul>
 </div>
 
@@ -324,6 +383,8 @@
           (category === 'frameworks' && catText.includes('framework')) ||
           (category === 'ai' && catText.includes('ai')) ||
           (category === 'devops' && catText.includes('devops')) ||
+          (category === 'automation' && catText.includes('automation')) ||
+          (category === 'marketing' && catText.includes('marketing')) ||
           (category === 'design' && catText.includes('design')) ||
           (category === 'tools' && (catText.includes('tools') || catText.includes('platform'))) ||
           (category === 'additional' && catText.includes('additional'))
