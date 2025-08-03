@@ -7,194 +7,156 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      background-color: #f4f6f9;
-      color: #333;
-    }
+    body {font-family: 'Poppins', sans-serif; margin: 0; background: #f4f6f9; color: #333; transition: 0.3s;}
+    header {background: linear-gradient(to right, #0f2027, #203a43, #2c5364); color: white; text-align: center; padding: 70px 20px;}
+    header h1 {font-size: 3rem; margin-bottom: 10px;}
+    nav {background-color: #203a43; display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; padding: 15px;}
+    nav a {color: #fff; text-decoration: none; font-weight: 600; font-size: 1rem; transition: color 0.3s;}
+    nav a:hover {color: #00ffff;}
 
-    header {
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: white;
-      text-align: center;
-      padding: 70px 20px;
-    }
+    .container {max-width: 1300px; margin: auto; padding: 40px 20px;}
+    h2 {font-size: 2.4rem; text-align: center; color: #203a43; margin-bottom: 30px;}
 
-    nav {
-      background-color: #203a43;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 15px;
-      padding: 15px;
-    }
+    .toolbar {display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; flex-wrap: wrap; gap: 10px;}
+    .toolbar input {padding: 10px 15px; border-radius: 8px; border: 1px solid #ccc; font-size: 1rem;}
+    .toolbar select {padding: 10px 15px; border-radius: 8px; border: 1px solid #ccc; font-size: 1rem;}
+    .toolbar button {background: #203a43; color: #fff; padding: 10px 18px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;}
+    .toolbar button:hover {background: #00bcd4;}
 
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1rem;
-    }
+    .certification-list {display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px;}
+    .certification-card {background: #fff; border-radius: 12px; padding: 20px; border-left: 6px solid #00bcd4; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: all 0.3s ease; display: flex; gap: 15px; align-items: flex-start;}
+    .certification-card:hover {transform: scale(1.02); box-shadow: 0 8px 25px rgba(0,0,0,0.15);}
+    .certification-logo img {width: 50px; height: auto; border-radius: 6px;}
+    .certification-info h3 {margin: 0; font-size: 1.15rem; color: #203a43;}
+    .certification-info p {margin: 5px 0 0; font-size: 0.95rem; color: #555;}
 
-    nav a:hover {
-      color: #00ffff;
-    }
+    footer {background-color: #203a43; color: white; text-align: center; padding: 30px 20px; margin-top: 50px;}
+    .social-links a {color: white; margin: 0 8px; font-size: 1.3rem;}
 
-    .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 60px 20px;
-    }
-
-    h2 {
-      font-size: 2.6rem;
-      text-align: center;
-      color: #203a43;
-      margin-bottom: 40px;
-    }
-
-    .certification-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 25px;
-    }
-
-    .certification-card {
-      background-color: #fff;
-      border-left: 6px solid #00bcd4;
-      border-radius: 10px;
-      padding: 20px 25px;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease;
-    }
-
-    .certification-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    }
-
-    .certification-card h3 {
-      font-size: 1.2rem;
-      color: #2c5364;
-      margin-bottom: 8px;
-    }
-
-    .certification-card p {
-      margin: 0;
-      font-size: 0.95rem;
-      color: #555;
-    }
-
-    footer {
-      background-color: #203a43;
-      color: white;
-      text-align: center;
-      padding: 30px 20px;
-      margin-top: 60px;
-    }
-
-    .social-links {
-      margin-top: 10px;
-    }
-
-    .social-links a {
-      color: white;
-      margin: 0 8px;
-      font-size: 1.2rem;
-      transition: color 0.3s;
-    }
-
-    .social-links a:hover {
-      color: #00bcd4;
-    }
+    .dark-mode {background: #121212; color: #ddd;}
+    .dark-mode header, .dark-mode nav, .dark-mode footer {background: #0f2027;}
+    .dark-mode .certification-card {background: #1f1f1f; color: #eee;}
   </style>
 </head>
-
 <body>
-  <header>
-    <h1>Certifications</h1>
-    <p>Verified Achievements & Global Recognitions</p>
-  </header>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="skills.html">Skills</a>
-    <a href="projects.html">Projects</a>
-    <a href="certifications.html">Certifications</a>
-    <a href="services.html">Services</a>
-    <a href="testimonials.html">Testimonials</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <div class="container">
-    <h2>Recognized Certifications</h2>
-    <div class="certification-list">
-
-      <div class="certification-card">
-        <h3>Google Cybersecurity Professional Certificate</h3>
-        <p>Coursera | Google (9-Course Specialization)</p>
-      </div>
-      
-      <div class="certification-card">
-        <h3>Prompt Engineering Certificate</h3>
-        <p>Fazal Qadir Khan Institute</p>
-      </div>
-    
-      <div class="certification-card">
-        <h3>Cybersecurity Awareness</h3>
-        <p>HP LIFE Online Training</p>
-      </div>
-
-      <div class="certification-card">
-        <h3>AI for Beginners</h3>
-        <p>HP LIFE Online Training</p>
-      </div>
-
-      <div class="certification-card">
-        <h3>Data Science & Analytics</h3>
-        <p>HP LIFE Online Training</p>
-      </div>
-
-      <div class="certification-card">
-        <h3>MERN Stack Development</h3>
-        <p>Simplilearn SkillUp</p>
-      </div>
-
-      <div class="certification-card">
-        <h3>Full MERN Stack Bootcamp</h3>
-        <p>Azad Chaiwala Institute</p>
-      </div>
-
-      <div class="certification-card">
-        <h3>Sigma Web Development Bootcamp</h3>
-        <p>CodeWithHarry (HTML, CSS, JS, PHP, MySQL)</p>
-      </div>
-
-      <div class="certification-card">
-        <h3>Ultimate Python Programming Series</h3>
-        <p>CodeWithHarry</p>
-      </div>
-
-      <div class="certification-card">
-        <h3>Complete Cybersecurity Course</h3>
-        <p>Azad Chaiwala Institute</p>
-      </div>
-
-
-
-    </div>
+<header>
+  <h1>Certifications</h1>
+  <p>Verified Achievements & Global Recognitions</p>
+</header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="skills.html">Skills</a>
+  <a href="projects.html">Projects</a>
+  <a href="certifications.html">Certifications</a>
+  <a href="services.html">Services</a>
+  <a href="testimonials.html">Testimonials</a>
+  <a href="contact.html">Contact</a>
+</nav>
+<div class="container">
+  <h2>Recognized Certifications</h2>
+  <div class="toolbar">
+    <input type="text" id="searchInput" placeholder="Search certifications...">
+    <select id="filterSelect">
+      <option value="all">All Categories</option>
+      <option value="google">Google</option>
+      <option value="comptia">CompTIA</option>
+      <option value="linkedin">LinkedIn</option>
+      <option value="hp">HP LIFE</option>
+      <option value="prompt">Prompt Engineering</option>
+      <option value="mern">MERN Stack</option>
+      <option value="others">Other Practical Courses</option>
+    </select>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <button onclick="downloadPDF()">Download PDF</button>
   </div>
 
-  <footer>
-    <p>© 2025 Muhammad Umar Naheed. All Rights Reserved.</p>
-    <p>Email: umark.dev@gmail.com | GitHub: github.com/umark-dev</p>
-    <div class="social-links">
-      <a href="mailto:umark.dev@gmail.com"><i class="fas fa-envelope"></i></a>
-      <a href="https://github.com/umark-dev" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/umarx-dev" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <div class="certification-list" id="certificationsContainer">
+    <!-- Certifications will be injected by JS for dynamic search/filter -->
+  </div>
+</div>
+<footer>
+  <p>© 2025 Muhammad Umar Naheed. All Rights Reserved.</p>
+  <p>Email: umark.dev@gmail.com | GitHub: github.com/umark-dev</p>
+  <div class="social-links">
+    <a href="mailto:umark.dev@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://github.com/umark-dev" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/in/umarx-dev" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+</footer>
+<script>
+const certifications = [
+  {name:"Google Cybersecurity Professional Certificate",provider:"Google",category:"google",logo:"https://www.gstatic.com/images/branding/product/1x/googlelogo_light_color_92x30dp.png"},
+  {name:"Foundations of Cybersecurity",provider:"Google",category:"google",logo:"https://www.gstatic.com/images/branding/product/1x/googlelogo_light_color_92x30dp.png"},
+  {name:"Play It Safe: Manage Security Risks",provider:"Google",category:"google",logo:"https://www.gstatic.com/images/branding/product/1x/googlelogo_light_color_92x30dp.png"},
+  {name:"Connect and Protect: Networks and Network Security",provider:"Google",category:"google",logo:"https://www.gstatic.com/images/branding/product/1x/googlelogo_light_color_92x30dp.png"},
+  {name:"Tools of the Trade: Linux and SQL",provider:"Google",category:"google",logo:"https://www.gstatic.com/images/branding/product/1x/googlelogo_light_color_92x30dp.png"},
+  {name:"Assets, Threats, and Vulnerabilities",provider:"Google",category:"google",logo:"https://www.gstatic.com/images/branding/product/1x/googlelogo_light_color_92x30dp.png"},
+  {name:"Sound the Alarm: Detection and Response",provider:"Google",category:"google",logo:"https://www.gstatic.com/images/branding/product/1x/googlelogo_light_color_92x30dp.png"},
+  {name:"Automate Cybersecurity Tasks with Python",provider:"Google",category:"google",logo:"https://www.gstatic.com/images/branding/product/1x/googlelogo_light_color_92x30dp.png"},
+  {name:"Put It to Work: Prepare for Cybersecurity Jobs",provider:"Google",category:"google",logo:"https://www.gstatic.com/images/branding/product/1x/googlelogo_light_color_92x30dp.png"},
+  {name:"Google IT Automation with Python Professional Certificate",provider:"Google",category:"google",logo:"https://www.gstatic.com/images/branding/product/1x/googlelogo_light_color_92x30dp.png"},
+  {name:"Crash Course on Python",provider:"Google",category:"google",logo:"https://www.gstatic.com/images/branding/product/1x/googlelogo_light_color_92x30dp.png"},
+  {name:"Using Python to Interact with the OS",provider:"Google",category:"google",logo:"https://www.gstatic.com/images/branding/product/1x/googlelogo_light_color_92x30dp.png"},
+  {name:"Introduction to Git and GitHub",provider:"Google",category:"google",logo:"https://www.gstatic.com/images/branding/product/1x/googlelogo_light_color_92x30dp.png"},
+  {name:"Troubleshooting and Debugging Techniques",provider:"Google",category:"google",logo:"https://www.gstatic.com/images/branding/product/1x/googlelogo_light_color_92x30dp.png"},
+  {name:"Configuration Management and the Cloud",provider:"Google",category:"google",logo:"https://www.gstatic.com/images/branding/product/1x/googlelogo_light_color_92x30dp.png"},
+  {name:"Automating Real-World Tasks with Python",provider:"Google",category:"google",logo:"https://www.gstatic.com/images/branding/product/1x/googlelogo_light_color_92x30dp.png"},
+  {name:"Google Data Analytics Professional Certificate",provider:"Google",category:"google",logo:"https://www.gstatic.com/images/branding/product/1x/googlelogo_light_color_92x30dp.png"},
+  {name:"Foundations: Data, Data, Everywhere",provider:"Google",category:"google",logo:"https://www.gstatic.com/images/branding/product/1x/googlelogo_light_color_92x30dp.png"},
+  {name:"Ask Questions to Make Data-Driven Decisions",provider:"Google",category:"google",logo:"https://www.gstatic.com/images/branding/product/1x/googlelogo_light_color_92x30dp.png"},
+  {name:"Prepare Data for Exploration",provider:"Google",category:"google",logo:"https://www.gstatic.com/images/branding/product/1x/googlelogo_light_color_92x30dp.png"},
+  {name:"Process Data from Dirty to Clean",provider:"Google",category:"google",logo:"https://www.gstatic.com/images/branding/product/1x/googlelogo_light_color_92x30dp.png"},
+  {name:"Analyze Data to Answer Questions",provider:"Google",category:"google",logo:"https://www.gstatic.com/images/branding/product/1x/googlelogo_light_color_92x30dp.png"},
+  {name:"Share Data Through Visualization",provider:"Google",category:"google",logo:"https://www.gstatic.com/images/branding/product/1x/googlelogo_light_color_92x30dp.png"},
+  {name:"Data Analysis with R Programming",provider:"Google",category:"google",logo:"https://www.gstatic.com/images/branding/product/1x/googlelogo_light_color_92x30dp.png"},
+  {name:"Google Data Analytics Capstone",provider:"Google",category:"google",logo:"https://www.gstatic.com/images/branding/product/1x/googlelogo_light_color_92x30dp.png"},
+  {name:"CompTIA Security+ (SY0-601)",provider:"CompTIA",category:"comptia",logo:"https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/CompTIA_logo.svg/320px-CompTIA_logo.svg.png"},
+  {name:"LinkedIn Advertising Fundamentals",provider:"LinkedIn",category:"linkedin",logo:"https://cdn-icons-png.flaticon.com/512/174/174857.png"},
+  {name:"LinkedIn Marketing Strategy",provider:"LinkedIn",category:"linkedin",logo:"https://cdn-icons-png.flaticon.com/512/174/174857.png"},
+  {name:"LinkedIn Content & Creative Design",provider:"LinkedIn",category:"linkedin",logo:"https://cdn-icons-png.flaticon.com/512/174/174857.png"},
+  {name:"AI for Beginners",provider:"HP LIFE",category:"hp",logo:"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/HP_logo_2012.svg/512px-HP_logo_2012.svg.png"},
+  {name:"Introduction to Cybersecurity Awareness",provider:"HP LIFE",category:"hp",logo:"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/HP_logo_2012.svg/512px-HP_logo_2012.svg.png"},
+  {name:"Data Science & Analytics",provider:"HP LIFE",category:"hp",logo:"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/HP_logo_2012.svg/512px-HP_logo_2012.svg.png"},
+  {name:"Mastering Prompt Engineering",provider:"Fazal Qadir Khan Institute",category:"prompt",logo:"https://cdn-icons-png.flaticon.com/512/3135/3135715.png"},
+  {name:"Fundamentals of MERN Stack Development",provider:"Simplilearn",category:"mern",logo:"https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/MERN-logo.png/512px-MERN-logo.png"},
+  {name:"Ultimate Python Programming Series",provider:"CodeWithHarry",category:"others",logo:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"},
+  {name:"Full Cybersecurity Course",provider:"Azad Chaiwala Institute",category:"others",logo:"https://cdn-icons-png.flaticon.com/512/2721/2721271.png"},
+  {name:"Project-Based Web Development Training",provider:"CodeWithHarry",category:"others",logo:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"},
+  {name:"Ethical Hacking Basics & Web Penetration Testing",provider:"Azad Chaiwala Institute",category:"others",logo:"https://cdn-icons-png.flaticon.com/512/2942/2942156.png"},
+  {name:"UI/UX Design Fundamentals",provider:"Others",category:"others",logo:"https://cdn-icons-png.flaticon.com/512/888/888859.png"}
+];
+
+const container = document.getElementById('certificationsContainer');
+
+function renderCertifications(list) {
+  container.innerHTML = list.map(cert => `
+    <div class="certification-card">
+      <div class="certification-logo"><img src="${cert.logo}" alt="${cert.provider}"></div>
+      <div class="certification-info">
+        <h3>${cert.name}</h3>
+        <p>${cert.provider}</p>
+      </div>
     </div>
-  </footer>
+  `).join('');
+}
+
+renderCertifications(certifications);
+
+document.getElementById('searchInput').addEventListener('input', e => {
+  const search = e.target.value.toLowerCase();
+  const filtered = certifications.filter(c => c.name.toLowerCase().includes(search));
+  renderCertifications(filtered);
+});
+
+document.getElementById('filterSelect').addEventListener('change', e => {
+  const value = e.target.value;
+  const filtered = value === 'all' ? certifications : certifications.filter(c => c.category === value);
+  renderCertifications(filtered);
+});
+
+function toggleDarkMode(){document.body.classList.toggle('dark-mode');}
+function downloadPDF(){window.print();}
+</script>
 </body>
 </html>
