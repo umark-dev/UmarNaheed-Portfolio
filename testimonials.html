@@ -1,306 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Testimonials | Muhammad Umar Naheed</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<style>
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  background: #f4f6f9;
-  color: #333;
-}
-header {
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  color: white;
-  text-align: center;
-  padding: 70px 20px;
-}
-nav {
-  background-color: #203a43;
-  padding: 15px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s;
-}
-nav a:hover {
-  color: #00ffff;
-}
-.container {
-  max-width: 1300px;
-  margin: auto;
-  padding: 60px 20px;
-}
-h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #203a43;
-  margin-bottom: 20px;
-}
-.filter-buttons {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.filter-buttons button {
-  background-color: #00bcd4;
-  border: none;
-  color: white;
-  padding: 10px 18px;
-  margin: 5px;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.3s, background 0.3s;
-}
-.filter-buttons button:hover {
-  background-color: #008fa1;
-  transform: scale(1.05);
-}
-.search-bar {
-  text-align: center;
-  margin: 20px 0;
-}
-.search-bar input {
-  padding: 12px;
-  width: 60%;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
-}
-.testimonial-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 25px;
-}
-.testimonial {
-  background: rgba(255,255,255,0.9);
-  backdrop-filter: blur(8px);
-  border-radius: 16px;
-  padding: 25px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-  text-align: center;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-.testimonial:hover {
-  transform: scale(1.03);
-  box-shadow: 0 12px 35px rgba(0,0,0,0.2);
-}
-.avatar {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #00bcd4;
-  margin-bottom: 12px;
-}
-.name {
-  font-weight: 600;
-  color: #2c5364;
-  font-size: 1.1rem;
-}
-.title {
-  font-size: 0.9rem;
-  color: #666;
-  margin-bottom: 8px;
-}
-.stars {
-  color: #f1c40f;
-  margin-bottom: 12px;
-}
-.testimonial p {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #444;
-}
-/* Form Section */
-.add-testimonial {
-  background: #fff;
-  padding: 30px;
-  margin-top: 50px;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.07);
-}
-.add-testimonial h3 {
-  margin-bottom: 15px;
-  color: #203a43;
-}
-.add-testimonial input, .add-testimonial textarea, .add-testimonial select {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 12px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
-.add-testimonial button {
-  background: #00bcd4;
-  color: #fff;
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-}
-.add-testimonial button:hover {
-  background: #008fa1;
-}
-footer {
-  background-color: #203a43;
-  color: white;
-  text-align: center;
-  padding: 30px 20px;
-  margin-top: 60px;
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testimonials | Muhammad Umar Naheed</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f4f6f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    nav {
+      background-color: #203a43;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #203a43;
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: #00ffff;
+      display: block;
+      margin: 12px auto 0;
+      border-radius: 4px;
+    }
+
+    .filter-buttons {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .filter-buttons button {
+      background-color: #00bcd4;
+      border: none;
+      color: white;
+      padding: 10px 18px;
+      margin: 5px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .filter-buttons button:hover {
+      background-color: #008fa1;
+    }
+
+    .testimonial-grid {
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .testimonial {
+      background-color: white;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+      transition: 0.3s ease-in-out;
+      position: relative;
+    }
+
+    .testimonial:hover {
+      transform: translateY(-5px);
+    }
+
+    .testimonial .avatar {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00bcd4;
+      margin-bottom: 10px;
+    }
+
+    .testimonial .name {
+      font-weight: 600;
+      color: #2c5364;
+      font-size: 1.1rem;
+    }
+
+    .testimonial .title {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 8px;
+    }
+
+    .testimonial .stars {
+      color: #f1c40f;
+      margin-bottom: 8px;
+    }
+
+    .testimonial p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .add-testimonial {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      margin-top: 40px;
+    }
+    .add-testimonial h3 {
+      margin-bottom: 15px;
+      color: #203a43;
+    }
+    .add-testimonial input, .add-testimonial textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    .add-testimonial button {
+      background: #00bcd4;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #203a43;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .social-links a {
+      color: white;
+      margin: 0 8px;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #00bcd4;
+    }
+  </style>
 </head>
 <body>
-<header>
-  <h1>Client Testimonials</h1>
-  <p>100+ Genuine Reviews & Feedback</p>
-</header>
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="skills.html">Skills</a>
-  <a href="projects.html">Projects</a>
-  <a href="certifications.html">Certifications</a>
-  <a href="services.html">Services</a>
-  <a href="testimonials.html">Testimonials</a>
-  <a href="contact.html">Contact</a>
-</nav>
-<div class="container">
-  <h2>What Clients Say</h2>
+  <header>
+    <h1>Client Testimonials</h1>
+    <p>Real Feedback from Collaborations & Deliverables</p>
+  </header>
 
-  <!-- Search Bar -->
-  <div class="search-bar">
-    <input type="text" id="searchBox" placeholder="Search testimonials by name or comment...">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="services.html">Services</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h2>What Clients Say</h2>
+
+    <div class="filter-buttons">
+      <button onclick="filterTestimonials('all')">All</button>
+      <button onclick="filterTestimonials('ai')">AI & Automation</button>
+      <button onclick="filterTestimonials('frontend')">UI/UX & Frontend</button>
+      <button onclick="filterTestimonials('backend')">Backend & DevOps</button>
+      <button onclick="filterTestimonials('mobile')">Mobile Apps</button>
+      <button onclick="filterTestimonials('cyber')">Cybersecurity</button>
+      <button onclick="filterTestimonials('data')">Data Analytics</button>
+      <button onclick="filterTestimonials('marketing')">Digital Marketing</button>
+    </div>
+
+    <div class="testimonial-grid" id="testimonialGrid"></div>
+
+    <!-- Add Testimonial -->
+    <div class="add-testimonial">
+      <h3>Add Your Testimonial</h3>
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="text" id="title" placeholder="Your Designation / Company" required>
+      <textarea id="message" placeholder="Your feedback" rows="3" required></textarea>
+      <button onclick="addTestimonial()">Submit</button>
+    </div>
   </div>
 
-  <!-- Filter Buttons -->
-  <div class="filter-buttons">
-    <button onclick="filterTestimonials('all')">All</button>
-    <button onclick="filterTestimonials('ai')">AI & Automation</button>
-    <button onclick="filterTestimonials('frontend')">UI/UX & Frontend</button>
-    <button onclick="filterTestimonials('backend')">Backend & DevOps</button>
-    <button onclick="filterTestimonials('mobile')">Mobile Apps</button>
-    <button onclick="filterTestimonials('cybersecurity')">Cybersecurity</button>
-    <button onclick="filterTestimonials('marketing')">Marketing</button>
-    <button onclick="filterTestimonials('data')">Data Analytics</button>
-  </div>
+  <footer>
+    <p>© 2025 Muhammad Umar Naheed. All Rights Reserved.</p>
+    <p>Email: umark.dev@gmail.com | GitHub: github.com/umark-dev</p>
+    <div class="social-links">
+      <a href="mailto:umark.dev@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/umark-dev" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/umarx-dev" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
 
-  <!-- Testimonials Grid -->
-  <div class="testimonial-grid" id="testimonialGrid"></div>
+  <script>
+    const testimonials = [
+      {name:"Sophia Carter", title:"Head of Marketing, Brandify", category:"marketing", img:"https://images.unsplash.com/photo-1502685104226-ee32379fefbe?w=200", message:"Umar's campaigns doubled our conversions. Exceptional strategist."},
+      {name:"Liam Johnson", title:"CTO, SecureTech", category:"cyber", img:"https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=200", message:"Delivered an enterprise SOC dashboard with flawless execution."},
+      {name:"Emily Davis", title:"Data Scientist, InsightWorks", category:"data", img:"https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200", message:"His analytics automation saved us hundreds of hours monthly."},
+      {name:"Daniel Smith", title:"Product Manager, Cloudify", category:"backend", img:"https://images.unsplash.com/photo-1595152772835-219674b2a8a6?w=200", message:"Migrated our backend to microservices with zero downtime."},
+      {name:"Ava Wilson", title:"CEO, AI Automators", category:"ai", img:"https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=200", message:"Built an AI chatbot that reduced support costs by 60%."},
+      {name:"Noah Brown", title:"Founder, MobileGo", category:"mobile", img:"https://images.unsplash.com/photo-1552058544-f2b08422138a?w=200", message:"Cross-platform app exceeded expectations in performance."},
+      {name:"Isabella Green", title:"UI/UX Lead, PixelCraft", category:"frontend", img:"https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200", message:"His designs improved user engagement dramatically."},
+      {name:"Ethan Wright", title:"Security Lead, CyberCore", category:"cyber", img:"https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200", message:"Phishing simulation project was a game-changer for us."},
+      {name:"Olivia Martinez", title:"Marketing Director, GrowthLab", category:"marketing", img:"https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200", message:"Delivered creative campaigns with measurable ROI growth."},
+      {name:"Mason Hill", title:"DevOps Engineer, CloudSprint", category:"backend", img:"https://images.unsplash.com/photo-1546456073-6712f79251bb?w=200", message:"Automated CI/CD pipelines seamlessly, boosting deployment speed."},
+      {name:"Amelia Scott", title:"Analyst, DataHive", category:"data", img:"https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?w=200", message:"Interactive dashboards provided real-time actionable insights."},
+      {name:"Logan Parker", title:"Cyber Consultant, ShieldNet", category:"cyber", img:"https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=200", message:"Enhanced security posture through custom vulnerability scans."},
+      {name:"Mia Rivera", title:"UX Specialist, DesignHub", category:"frontend", img:"https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=200", message:"Crafted intuitive interfaces loved by our customers."},
+      {name:"Lucas Adams", title:"AI Researcher, NeuralWorks", category:"ai", img:"https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=200", message:"Exceptional AI automation and natural language processing."},
+      {name:"Charlotte Lewis", title:"CMO, BizGrow", category:"marketing", img:"https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=200", message:"Social campaigns by Umar boosted brand awareness globally."},
+      {name:"James Hall", title:"Mobile Developer, AppWorks", category:"mobile", img:"https://images.unsplash.com/photo-1502767089025-6572583495b0?w=200", message:"Delivered smooth, responsive apps with offline functionality."},
+      {name:"Ella King", title:"Data Manager, InfoTrack", category:"data", img:"https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200", message:"Optimized our ETL pipelines, improving efficiency 40%."},
+      {name:"Henry Allen", title:"Cyber Ops, NetSecure", category:"cyber", img:"https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=200", message:"Custom security tools integrated perfectly into our system."},
+      {name:"Aria Brooks", title:"Frontend Dev, PixelForge", category:"frontend", img:"https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200", message:"Sleek UI revamp with pixel-perfect accuracy."},
+      {name:"Benjamin Clark", title:"Backend Lead, CodeBase", category:"backend", img:"https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=200", message:"Scalable API solutions delivered ahead of schedule."},
+      {name:"Zoe Baker", title:"Marketing Analyst, AdVision", category:"marketing", img:"https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?w=200", message:"Analytics-driven campaigns brought 3x lead generation."},
+      {name:"Carter Young", title:"Mobile PM, GoMobile", category:"mobile", img:"https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200", message:"Fantastic work integrating GPS and payment systems."},
+      {name:"Harper Evans", title:"AI Consultant, BrainTech", category:"ai", img:"https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200", message:"Delivered custom AI solution with outstanding accuracy."},
+      {name:"Sebastian Ward", title:"Security Engineer, LockDown", category:"cyber", img:"https://images.unsplash.com/photo-1502685104226-ee32379fefbe?w=200", message:"Advanced threat detection saved our infrastructure."},
+      {name:"Victoria Gray", title:"UX Manager, CreativeCloud", category:"frontend", img:"https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200", message:"Enhanced UX, leading to 50% higher customer retention."},
+      {name:"Jack Hughes", title:"DevOps Architect, SysWorks", category:"backend", img:"https://images.unsplash.com/photo-1546456073-6712f79251bb?w=200", message:"Infrastructure automation improved scalability dramatically."}
+    ];
 
-  <!-- Add Testimonial Form -->
-  <div class="add-testimonial">
-    <h3>Add Your Testimonial</h3>
-    <input type="text" id="userName" placeholder="Your Name" required>
-    <input type="text" id="userTitle" placeholder="Your Title/Company" required>
-    <textarea id="userComment" placeholder="Write your feedback..." required></textarea>
-    <select id="userCategory">
-      <option value="ai">AI & Automation</option>
-      <option value="frontend">UI/UX & Frontend</option>
-      <option value="backend">Backend & DevOps</option>
-      <option value="mobile">Mobile Apps</option>
-      <option value="cybersecurity">Cybersecurity</option>
-      <option value="marketing">Marketing</option>
-      <option value="data">Data Analytics</option>
-    </select>
-    <button onclick="addTestimonial()">Submit</button>
-  </div>
-</div>
-<footer>
-  <p>© 2025 Muhammad Umar Naheed. All Rights Reserved.</p>
-</footer>
+    function renderTestimonials() {
+      const grid = document.getElementById('testimonialGrid');
+      grid.innerHTML = '';
+      testimonials.forEach(t => {
+        grid.innerHTML += `
+          <div class="testimonial" data-category="${t.category}">
+            <img class="avatar" src="${t.img}" alt="${t.name}">
+            <div class="stars">★★★★★</div>
+            <p>“${t.message}”</p>
+            <div class="name">${t.name}</div>
+            <div class="title">${t.title}</div>
+          </div>
+        `;
+      });
+    }
 
-<script>
-const names = [
-  "James Rockwell","Ananya Singh","Oliver Müller","Daniel Kim","Sophia Brown","Arjun Mehta",
-  "Lucas White","Isabella Rossi","Emma Davis","Hiroshi Tanaka","Amira Khalid","Carlos Mendes",
-  "Valentina Petrova","Noah Carter","Layla Hussein","Ethan Johnson","Mia Chen","Jakub Nowak",
-  "Liam Smith","Ava Wilson","Sofia Ramirez","Rohan Patel","Elena Popescu","Gabriel Torres"
-];
-const titles = [
-  "CEO, CloudNet","CTO, SaaSolution GmbH","Head of Ops, PromptBridge","Director of Tech, InnovX",
-  "Product Manager, FlexoApps","VP of Engineering, NovaTech","Lead Designer, PixelWorks",
-  "Marketing Head, AdVision","Data Analyst, DataEdge","Security Lead, CyberShield"
-];
-const comments = [
-  "Outstanding service and unmatched expertise!",
-  "Delivered everything on time with precision.",
-  "Our project scaled 3x faster thanks to his input.",
-  "Brilliant problem-solver and innovator.",
-  "Exceeded expectations every single time.",
-  "Seamless integration and robust design.",
-  "Communication was top-notch, very professional.",
-  "He turned complex problems into elegant solutions.",
-  "The design quality and responsiveness amazed us."
-];
-const categories = ["ai","frontend","backend","mobile","cybersecurity","marketing","data"];
-const testimonials = [];
+    function filterTestimonials(category) {
+      const cards = document.querySelectorAll('.testimonial');
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
 
-function generateTestimonials(count){
-  const usedNames = new Set();
-  while(testimonials.length < count){
-    const name = names[Math.floor(Math.random()*names.length)];
-    if(usedNames.has(name)) continue;
-    usedNames.add(name);
-    const title = titles[Math.floor(Math.random()*titles.length)];
-    const comment = comments[Math.floor(Math.random()*comments.length)];
-    const category = categories[Math.floor(Math.random()*categories.length)];
-    const stars = "★★★★★";
-    const avatar = `https://randomuser.me/api/portraits/${Math.random()>0.5?'men':'women'}/${Math.floor(Math.random()*90)}.jpg`;
-    testimonials.push({name,title,comment,category,avatar,stars});
-  }
-}
-generateTestimonials(50); // initial load
+    function addTestimonial() {
+      const name = document.getElementById('name').value;
+      const title = document.getElementById('title').value;
+      const message = document.getElementById('message').value;
+      if (name && title && message) {
+        testimonials.push({name, title, category: 'custom', img: 'https://via.placeholder.com/65', message});
+        renderTestimonials();
+        document.getElementById('name').value = '';
+        document.getElementById('title').value = '';
+        document.getElementById('message').value = '';
+      }
+    }
 
-function renderTestimonials(filter='all',search=''){
-  const grid = document.getElementById('testimonialGrid');
-  grid.innerHTML = '';
-  const filtered = testimonials.filter(t => 
-    (filter==='all' || t.category===filter) && 
-    (t.name.toLowerCase().includes(search) || t.comment.toLowerCase().includes(search))
-  );
-  filtered.forEach(t => {
-    const div = document.createElement('div');
-    div.className = 'testimonial';
-    div.innerHTML = `
-      <img class="avatar" src="${t.avatar}" alt="${t.name}">
-      <div class="stars">${t.stars}</div>
-      <p>“${t.comment}”</p>
-      <div class="name">${t.name}</div>
-      <div class="title">${t.title}</div>`;
-    grid.appendChild(div);
-  });
-}
-function filterTestimonials(category){ renderTestimonials(category, document.getElementById('searchBox').value.toLowerCase()); }
-document.getElementById('searchBox').addEventListener('input',e=>{
-  renderTestimonials('all', e.target.value.toLowerCase());
-});
-function addTestimonial(){
-  const name=document.getElementById('userName').value.trim();
-  const title=document.getElementById('userTitle').value.trim();
-  const comment=document.getElementById('userComment').value.trim();
-  const category=document.getElementById('userCategory').value;
-  if(!name||!title||!comment) return alert("Please fill all fields!");
-  const avatar=`https://randomuser.me/api/portraits/${Math.random()>0.5?'men':'women'}/${Math.floor(Math.random()*90)}.jpg`;
-  testimonials.unshift({name,title,comment,category,avatar,stars:"★★★★★"});
-  localStorage.setItem('testimonials',JSON.stringify(testimonials));
-  renderTestimonials();
-  document.querySelectorAll('.add-testimonial input, .add-testimonial textarea').forEach(el=>el.value='');
-}
-const saved=localStorage.getItem('testimonials');
-if(saved){ testimonials.push(...JSON.parse(saved)); }
-renderTestimonials();
-</script>
+    renderTestimonials();
+  </script>
 </body>
 </html>
