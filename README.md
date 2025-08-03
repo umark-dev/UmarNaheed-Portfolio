@@ -1,66 +1,52 @@
-# 🌐 Muhammad Umar Naheed — Cybersecurity, Automation & AI Specialist  
+# 🌐 Muhammad Umar Naheed — Cybersecurity | Automation | AI  
 
-![Profile Views](https://komarev.com/ghpvc/?username=umark-dev&color=blue)  
-![GitHub followers](https://img.shields.io/github/followers/umark-dev?style=social)  
-![GitHub stars](https://img.shields.io/github/stars/umark-dev?style=social)  
+![Header GIF or Banner](https://your-banner-link-here)  
 
 ---
 
-## 🚀 About Me  
-**Google-Certified Cybersecurity Professional | IT Automation Expert | Data Analytics Professional | CompTIA Security+ Certified | Full-Stack & AI Developer**  
+## 👨‍💻 About Me  
+🔐 Google-Certified Cybersecurity Professional | SOC Analyst | IT Automation Specialist | MERN Stack Developer | Data Analytics | Prompt Engineering  
 
-💻 Passionate about building **secure, scalable, and AI-powered applications**. Skilled in **SOC operations, Linux hardening, Python automation, and cloud deployment**.  
-
-📍 Location: Bhalwal, Pakistan  
-🌐 Portfolio: [umar-naheed.netlify.app](https://umar-naheed.netlify.app)  
-📫 Contact: [khanumer2003@gmail.com](mailto:khanumer2003@gmail.com) | [LinkedIn](https://linkedin.com/in/umarx-dev)  
+💡 I build secure, scalable, and AI-driven digital solutions for businesses and organizations. Passionate about **cyber defense**, **automation scripting**, and **data-powered decision-making**.  
 
 ---
 
-## 🏆 Professional Certifications  
+## 🏆 Certifications  
+![Google Cybersecurity](https://img.shields.io/badge/Google-Cybersecurity-blue)  
+![Google IT Automation](https://img.shields.io/badge/Google-IT%20Automation-green)  
+![Google Data Analytics](https://img.shields.io/badge/Google-Data%20Analytics-orange)  
+![CompTIA Security+](https://img.shields.io/badge/CompTIA-Security+-red)  
+![Prompt Engineering](https://img.shields.io/badge/Prompt-Engineering-purple)  
+![LinkedIn Marketing](https://img.shields.io/badge/LinkedIn-Marketing-blue)  
 
-✔ **Google Cybersecurity Professional Certificate**  
-✔ **Google IT Automation with Python Professional Certificate**  
-✔ **Google Data Analytics Professional Certificate**  
-✔ **CompTIA Security+ (SY0-601)**  
-✔ **LinkedIn Marketing & Ads Strategy Certifications**  
-✔ **HP LIFE: AI for Beginners, Cybersecurity Awareness, Data Analytics**  
-✔ **Prompt Engineering (ChatGPT, LLMs)**  
-✔ **Fundamentals of MERN Stack Development — Simplilearn**  
-
-🎖 **Badges:**  
-![Google Badge](https://img.shields.io/badge/Google-Certified-blue) ![CompTIA Security+](https://img.shields.io/badge/CompTIA-Security%2B-red) ![Prompt Engineering](https://img.shields.io/badge/Prompt-Engineer-orange)  
+🔗 [**View All Certifications**](https://linkedin.com/in/umarx-dev)  
 
 ---
 
-## 🛠 Technical Skills  
-
-**Cybersecurity**: Nmap, Wireshark, SOC Tools, Burp Suite, OWASP Top 10  
-**Automation**: Python, Bash, Git/GitHub, CI/CD  
-**Full-Stack Development**: MERN Stack (MongoDB, Express, React, Node.js)  
-**AI & Prompt Engineering**: ChatGPT, OpenAI API, LangChain  
-**Cloud & DevOps**: AWS, Firebase, Netlify, Docker  
-**Data Analytics**: SQL, R, Google Data Studio, Visualization  
+## 💻 Skills  
+**Cybersecurity:** Linux Hardening, SOC Tools, Wireshark, Burp Suite  
+**Automation:** Python, Bash, CI/CD, Cloud Deployment  
+**Development:** MERN Stack, Secure Web & Mobile Apps  
+**AI & Data:** Prompt Engineering, Data Visualization, Google Data Studio  
 
 ---
 
 ## 🔥 Featured Projects  
+🚀 **Linux Hardening Toolkit** → [GitHub](https://github.com/umark-dev/linux-hardening)  
+🚀 **AI Resume Builder (OpenAI)** → [GitHub](https://github.com/umark-dev/ai-resume-builder)  
+🚀 **Nmap + PDF Report Generator** → [GitHub](https://github.com/umark-dev/nmap-reports)  
 
-| Project | Description | Tech Stack |
-| ------- | ----------- | ---------- |
-| **Linux Hardening Toolkit** | Automated system hardening scripts | Bash, Linux |
-| **Nmap + PDF Report Generator** | Vulnerability scanning & PDF reporting | Python, Nmap |
-| **SSH Brute-Force Detection** | Real-time alerting & IP blocking | Python, Regex |
-| **AI Resume Builder** | GPT-powered resume generator | JS, OpenAI API |
-| **Cybersecurity Awareness Dashboard** | School digital security platform | Google Apps Script |
-
-📌 **View all projects:** [GitHub Repos](https://github.com/umark-dev)  
+**More Projects →** [Portfolio](https://umar-naheed.netlify.app)  
 
 ---
 
 ## 📊 GitHub Stats  
-![Umar's GitHub stats](https://github-readme-stats.vercel.app/api?username=umark-dev&show_icons=true&theme=tokyonight)  
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=umark-dev&layout=compact&theme=tokyonight)  
+![Umar's GitHub stats](https://github-readme-stats.vercel.app/api?username=umark-dev&show_icons=true&theme=radical)  
+![Streak](https://github-readme-streak-stats.herokuapp.com/?user=umark-dev&theme=radical)  
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=umark-dev&layout=compact&theme=radical)  
+
+🏆 **Trophies:**  
+![trophy](https://github-profile-trophy.vercel.app/?username=umark-dev&theme=dracula)  
 
 ---
 
@@ -68,7 +54,8 @@
 📧 Email: [khanumer2003@gmail.com](mailto:khanumer2003@gmail.com)  
 🔗 LinkedIn: [linkedin.com/in/umarx-dev](https://linkedin.com/in/umarx-dev)  
 🌍 Portfolio: [umar-naheed.netlify.app](https://umar-naheed.netlify.app)  
+📱 WhatsApp: [Click to Chat](https://wa.me/923453500316)  
 
 ---
 
-© 2025 Muhammad Umar Naheed. Built with ❤️ | Secured with 🛡️  
+![Profile Views](https://komarev.com/ghpvc/?username=umark-dev&color=blue)  
