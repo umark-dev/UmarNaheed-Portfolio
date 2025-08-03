@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Muhammad Umar Naheed | Cybersecurity & Automation Specialist</title>
+  <title>Muhammad Umar Naheed | Cybersecurity & Full-Stack Expert</title>
+  <meta name="description" content="Muhammad Umar Naheed - Google Certified Cybersecurity Specialist, MERN Developer, AI Prompt Engineer, Mobile Developer, and Data Analyst. Explore my portfolio.">
+  <meta name="keywords" content="Cybersecurity, MERN Developer, AI Automation, Linux Security, Data Analytics, Mobile Development, Google Certified, Prompt Engineering">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
@@ -23,30 +25,58 @@
       box-sizing: border-box;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
       font-family: 'Poppins', sans-serif;
       background-color: var(--light-bg);
       color: var(--dark);
+      line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(to right, var(--primary), var(--secondary), var(--accent));
+      background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
       color: var(--white);
-      padding: 70px 20px;
       text-align: center;
+      padding: 80px 20px;
     }
 
     header h1 {
-      font-size: 3rem;
+      font-size: 3.2rem;
+      font-weight: 700;
     }
 
     header p {
       font-size: 1.2rem;
-      margin-top: 10px;
+      margin-top: 15px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .header-cta {
+      margin-top: 30px;
+    }
+
+    .header-cta a {
+      display: inline-block;
+      background: var(--highlight);
+      color: var(--primary);
+      padding: 14px 35px;
+      margin: 8px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.1rem;
+      transition: 0.3s;
+    }
+
+    .header-cta a.secondary {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid var(--highlight);
+    }
+
+    .header-cta a:hover {
+      opacity: 0.85;
     }
 
     nav {
@@ -62,7 +92,7 @@
 
     nav a {
       color: var(--white);
-      margin: 10px 20px;
+      margin: 10px 18px;
       text-decoration: none;
       font-weight: 600;
       font-size: 1rem;
@@ -74,7 +104,7 @@
     }
 
     section {
-      padding: 80px 20px;
+      padding: 70px 20px;
       max-width: 1200px;
       margin: auto;
     }
@@ -83,38 +113,18 @@
       font-size: 2.4rem;
       text-align: center;
       color: var(--primary);
-      margin-bottom: 40px;
+      margin-bottom: 35px;
       position: relative;
     }
 
     .section-title::after {
       content: '';
-      width: 60px;
+      width: 70px;
       height: 4px;
       background: var(--highlight);
       display: block;
       margin: 10px auto 0;
       border-radius: 4px;
-    }
-
-    .cta {
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    .cta a {
-      background: var(--primary);
-      color: var(--white);
-      padding: 15px 40px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1.1rem;
-      transition: background 0.3s ease;
-    }
-
-    .cta a:hover {
-      background: var(--accent);
     }
 
     .grid {
@@ -125,38 +135,37 @@
 
     .card {
       background: var(--white);
-      border-radius: 14px;
-      padding: 30px;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-      border-left: 5px solid var(--accent);
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+      text-align: center;
       transition: transform 0.3s ease;
     }
 
     .card:hover {
-      transform: translateY(-10px);
+      transform: translateY(-8px);
     }
 
     .card i {
       font-size: 2.4rem;
       color: var(--accent);
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
     .card h3 {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       margin-bottom: 10px;
+      font-weight: 700;
     }
 
     .card p {
       font-size: 1rem;
-      line-height: 1.6;
     }
 
     ul {
       max-width: 1000px;
       margin: auto;
       padding-left: 20px;
-      line-height: 2;
       font-size: 1.1rem;
     }
 
@@ -165,54 +174,36 @@
       color: var(--accent);
     }
 
-    .stats-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 25px;
-      margin-top: 30px;
-    }
-
-    .stat-box {
-      background: var(--white);
-      padding: 20px 30px;
-      border-radius: 12px;
-      font-size: 1.1rem;
-      font-weight: bold;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-    }
-
     .project-card {
       background: var(--white);
-      padding: 25px;
+      padding: 20px;
       border-radius: 12px;
-      box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.08);
       transition: 0.3s ease;
     }
 
     .project-card:hover {
-      transform: translateY(-8px);
+      transform: translateY(-6px);
     }
 
     .project-title {
-      font-size: 1.3rem;
-      margin-bottom: 10px;
-      font-weight: 600;
+      font-size: 1.2rem;
+      font-weight: 700;
       color: var(--primary);
+      margin-bottom: 8px;
     }
 
-    .testimonial-section blockquote {
+    blockquote {
       font-style: italic;
       color: #444;
       max-width: 800px;
       margin: 20px auto;
       text-align: center;
-      position: relative;
     }
 
-    .testimonial-section cite {
+    cite {
       display: block;
-      margin-top: 10px;
+      margin-top: 8px;
       font-weight: bold;
       color: var(--secondary);
     }
@@ -222,7 +213,7 @@
       color: var(--white);
       text-align: center;
       padding: 50px 20px;
-      margin-top: 90px;
+      margin-top: 80px;
     }
 
     .social-links {
@@ -240,39 +231,38 @@
     }
   </style>
 </head>
-
 <body>
-<header style="padding: 80px 20px; text-align: center; background: linear-gradient(90deg, #0f2027, #203a43, #2c5364); color: #fff;">
-  <h1 style="font-size: 3.2rem; font-weight: 700;">Muhammad Umar Naheed</h1>
-  <p style="font-size: 1.4rem; margin: 10px auto; max-width: 900px; line-height: 1.6;">
-    <strong>Cybersecurity & Automation Specialist</strong> | Google-Certified | <strong>Full-Stack Developer (MERN)</strong> |
-    Mobile App Developer | <strong>AI Prompt Engineer</strong> | Data Analyst | <strong>LinkedIn Marketing & Digital Strategist</strong>
+
+<header>
+  <h1>Muhammad Umar Naheed</h1>
+  <p>
+    Cybersecurity Specialist | Google-Certified | MERN Developer | Mobile App Developer | AI Prompt Engineer | Data Analyst | Marketing Strategist
   </p>
-  <p style="margin-top: 20px; font-size: 1.1rem;">Blending <strong>security, automation, and innovation</strong> to deliver impactful tech solutions.</p>
-  <div style="margin-top: 30px;">
-    <a href="contact.html" style="background:#00ffff; color:#0f2027; padding:15px 35px; border-radius:8px; text-decoration:none; font-weight:700; font-size:1.2rem; transition:0.3s;">Hire Me</a>
-    <a href="projects.html" style="background:transparent; color:#fff; border:2px solid #00ffff; padding:15px 35px; margin-left:15px; border-radius:8px; text-decoration:none; font-weight:600; font-size:1.2rem; transition:0.3s;">View Projects</a>
+  <div class="header-cta">
+    <a href="contact.html">Hire Me</a>
+    <a href="projects.html" class="secondary">View Projects</a>
   </div>
 </header>
 
-
-    <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="skills.html">Skills</a>
-    <a href="projects.html">Projects</a>
-    <a href="certifications.html">Certifications</a>
-    <a href="services.html">Services</a>
-    <a href="testimonials.html">Testimonials</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="skills.html">Skills</a>
+  <a href="projects.html">Projects</a>
+  <a href="certifications.html">Certifications</a>
+  <a href="services.html">Services</a>
+  <a href="testimonials.html">Testimonials</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
 <section>
   <h2 class="section-title">Welcome to My Digital Portfolio</h2>
   <p style="text-align:center; max-width:900px; margin:auto;">
-    I’m <strong>Muhammad Umar Naheed</strong>, a multi-skilled technology professional passionate about <strong>Cybersecurity, Secure Development, AI-driven Automation, and Data Analytics</strong>. With <strong>40+ global certifications</strong> and <strong>1,490+ successful projects</strong>, I bring expertise across <strong>Cybersecurity, MERN Stack Development, Linux Administration, Mobile Apps, Cloud Solutions, and Digital Marketing</strong>. My goal is to help businesses innovate securely while leveraging automation and analytics for growth.
+    I’m <strong>Muhammad Umar Naheed</strong>, a multi-domain tech professional passionate about
+    <strong>Cybersecurity, Secure Web Development, AI-powered Automation, and Data Analytics</strong>.
+    With <strong>40+ global certifications</strong> and <strong>1,490+ successful projects</strong>, I help businesses innovate securely and
+    efficiently with cutting-edge technology solutions.
   </p>
-  <div class="cta"><a href="contact.html">Hire Me</a></div>
 </section>
 
 <section>
@@ -280,43 +270,31 @@
   <div class="grid">
     <div class="card"><i class="fas fa-code"></i>
       <h3>1,490+ Projects Delivered</h3>
-      <p>Websites, mobile apps, AI tools, security automation scripts, and cloud-based solutions.</p>
+      <p>Websites, Mobile Apps, AI tools, Security Automation Scripts, and Cloud Solutions.</p>
     </div>
     <div class="card"><i class="fas fa-shield-alt"></i>
       <h3>Security-First Approach</h3>
-      <p>Expert in SOC tools, Linux hardening, threat detection, vulnerability assessments, and OWASP compliance.</p>
+      <p>Expert in SOC tools, Linux Hardening, Threat Detection, Vulnerability Assessment, and OWASP compliance.</p>
     </div>
     <div class="card"><i class="fas fa-certificate"></i>
       <h3>40+ Global Certifications</h3>
-      <p>Google Cybersecurity, Data Analytics, IT Automation, CompTIA Security+, HP LIFE, Prompt Engineering, MERN Stack.</p>
+      <p>Google Cybersecurity, Data Analytics, IT Automation, LinkedIn Marketing, CompTIA Security+, HP LIFE, Prompt Engineering.</p>
     </div>
   </div>
 </section>
 
 <section>
-  <h2 class="section-title">Core Skills & Specializations</h2>
+  <h2 class="section-title">Skills & Specializations</h2>
   <ul>
-    <li><strong>Cybersecurity:</strong> SOC Tools, SIEM, Threat Detection, Linux Security, Risk Mitigation</li>
-    <li><strong>Automation:</strong> Python & Bash scripting for log analysis, SSH monitoring, PDF reporting</li>
-    <li><strong>Web Development:</strong> MERN Stack (MongoDB, Express.js, React.js, Node.js), Secure API Development</li>
-    <li><strong>Mobile Development:</strong> Android (Kotlin, Firebase), Progressive Web Apps</li>
-    <li><strong>Data Analytics:</strong> SQL, R Programming, Google Data Studio, Visualization</li>
-    <li><strong>AI & Prompt Engineering:</strong> GPT-powered workflows, OpenAI API integrations</li>
-    <li><strong>Cloud & DevOps:</strong> AWS, Firebase, Netlify, CI/CD Pipelines, Git</li>
-    <li><strong>Linux Administration:</strong> Ubuntu, CLI tools, Firewall Configurations</li>
-    <li><strong>Digital Marketing:</strong> SEO, LinkedIn Marketing, Google Ads</li>
-    <li><strong>Design Tools:</strong> Figma, Canva, Adobe Creative Suite</li>
-  </ul>
-</section>
-<section>
-  <h2 class="section-title">Key Certifications</h2>
-  <ul>
-    <li><strong>Google Career Certificates:</strong> Cybersecurity, Data Analytics, IT Automation with Python</li>
-    <li><strong>CompTIA Security+ (SY0-601)</strong> – Global cybersecurity standard</li>
-    <li><strong>LinkedIn Learning:</strong> Marketing Strategy, Advertising Fundamentals, Creative Content Design</li>
-    <li><strong>HP LIFE:</strong> AI for Beginners, Cybersecurity Awareness, Data Science & Analytics</li>
-    <li><strong>Prompt Engineering:</strong> Advanced ChatGPT-4 Workflows (Fazal Qadir Khan Institute)</li>
-    <li><strong>Simplilearn:</strong> MERN Stack Development Fundamentals</li>
+    <li><strong>Cybersecurity:</strong> SOC Tools, SIEM, Linux Security, Risk Mitigation</li>
+    <li><strong>Automation:</strong> Python & Bash scripting for security and workflows</li>
+    <li><strong>Full-Stack Development:</strong> MERN Stack, Secure APIs, OWASP Compliance</li>
+    <li><strong>Mobile Development:</strong> Kotlin + Firebase, Progressive Web Apps</li>
+    <li><strong>Data Analytics:</strong> SQL, R Programming, Google Data Studio</li>
+    <li><strong>AI & Prompt Engineering:</strong> GPT-powered solutions, OpenAI API</li>
+    <li><strong>Cloud & DevOps:</strong> AWS, Firebase, Netlify, CI/CD</li>
+    <li><strong>Digital Marketing:</strong> SEO, LinkedIn Strategy, Google Ads</li>
+    <li><strong>Design:</strong> Figma, Canva, Adobe Suite</li>
   </ul>
 </section>
 
@@ -325,44 +303,41 @@
   <div class="grid">
     <div class="project-card">
       <div class="project-title">Linux Hardening Toolkit</div>
-      <p>Bash automation for UFW firewall, SSH security, and Fail2Ban configurations.</p>
+      <p>Bash-based automation for UFW firewall, SSH security, and Fail2Ban setup.</p>
     </div>
     <div class="project-card">
       <div class="project-title">AI Resume Builder</div>
-      <p>GPT-powered resume generation tool with ATS-friendly optimization and dynamic formatting.</p>
+      <p>GPT-powered resume generator creating ATS-friendly, customized resumes.</p>
     </div>
     <div class="project-card">
       <div class="project-title">Data Visualization Dashboard</div>
-      <p>Interactive dashboard for analytics using Google Data Studio and R for statistical insights.</p>
-    </div>
-    <div class="project-card">
-      <div class="project-title">Mobile App for OPE School</div>
-      <p>Kotlin + Firebase app for attendance tracking with real-time cloud sync and SMS alerts.</p>
+      <p>Interactive dashboards using Google Data Studio for business insights.</p>
     </div>
   </div>
 </section>
 
-<section class="testimonial-section">
-  <h2 class="section-title">What People Say</h2>
+<section>
+  <h2 class="section-title">Testimonials</h2>
   <blockquote>
-    “Umar transformed our digital security framework and introduced automation that saved hours of work weekly.”
+    “Umar transformed our security posture and automated critical processes, saving time and improving compliance.”
     <cite>— Sheikh Hamid Saeed Awan, Director, OPE School</cite>
   </blockquote>
   <blockquote>
-    “From API security to cloud deployment, Umar’s expertise is top-tier. Highly professional and results-driven.”
+    “From API security to full-stack development, Umar’s expertise ensured our AI app launch was a success.”
     <cite>— Sarah Khan, Founder, AIPath</cite>
   </blockquote>
 </section>
 
-  <footer>
-    <p>© 2025 Muhammad Umar Naheed — All Rights Reserved</p>
-    <p>Email: umark.dev@gmail.com</p>
-    <div class="social-links">
-      <a href="mailto:umark.dev@gmail.com"><i class="fas fa-envelope"></i></a>
-      <a href="https://github.com/umark-dev" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/umarx-dev" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://umar-naheed.netlify.app" target="_blank"><i class="fas fa-globe"></i></a>
-    </div>
-  </footer>
+<footer>
+  <p>© 2025 Muhammad Umar Naheed — All Rights Reserved</p>
+  <p>Email: umark.dev@gmail.com</p>
+  <div class="social-links">
+    <a href="mailto:umark.dev@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://github.com/umark-dev" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/in/umarx-dev" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://umar-naheed.netlify.app" target="_blank"><i class="fas fa-globe"></i></a>
+  </div>
+</footer>
+
 </body>
 </html>
