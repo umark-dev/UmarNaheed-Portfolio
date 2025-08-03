@@ -1,6 +1,6 @@
 # 🌐 Muhammad Umar Naheed — Cybersecurity | Automation | AI  
 
-![Header GIF or Banner]([https://your-banner-link-here](https://github.com/umark-dev/UmarNaheed-Portfolio/blob/main/Black%20and%20Yellow%20Web%20Developer%20LinkedIn%20Banner%20(11).png))  
+![Header GIF or Banner](https://github.com/umark-dev/UmarNaheed-Portfolio/blob/main/Black%20and%20Yellow%20Web%20Developer%20LinkedIn%20Banner%20(11).png))  
 
 ---
 
