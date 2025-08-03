@@ -99,6 +99,7 @@
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
       transition: 0.3s ease-in-out;
       position: relative;
+      text-align: center;
     }
 
     .testimonial:hover {
@@ -129,6 +130,7 @@
     .testimonial .stars {
       color: #f1c40f;
       margin-bottom: 8px;
+      font-size: 1rem;
     }
 
     .testimonial p {
@@ -136,6 +138,7 @@
       line-height: 1.6;
     }
 
+    /* Add Testimonial Section */
     .add-testimonial {
       background: #fff;
       padding: 25px;
@@ -147,12 +150,13 @@
       margin-bottom: 15px;
       color: #203a43;
     }
-    .add-testimonial input, .add-testimonial textarea {
+    .add-testimonial input, .add-testimonial textarea, .add-testimonial select {
       width: 100%;
       padding: 10px;
       margin-bottom: 12px;
       border-radius: 6px;
       border: 1px solid #ccc;
+      font-size: 1rem;
     }
     .add-testimonial button {
       background: #00bcd4;
@@ -161,6 +165,31 @@
       padding: 10px 20px;
       border-radius: 6px;
       cursor: pointer;
+      font-weight: bold;
+    }
+    .add-testimonial .stars-input {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    .add-testimonial .stars-input i {
+      font-size: 1.5rem;
+      color: #ccc;
+      cursor: pointer;
+      margin: 0 4px;
+      transition: color 0.3s;
+    }
+    .add-testimonial .stars-input i.selected {
+      color: #f1c40f;
+    }
+    .preview-img {
+      display: block;
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      margin: 10px auto;
+      object-fit: cover;
+      border: 2px solid #00bcd4;
     }
 
     footer {
@@ -222,6 +251,15 @@
       <input type="text" id="name" placeholder="Your Name" required>
       <input type="text" id="title" placeholder="Your Designation / Company" required>
       <textarea id="message" placeholder="Your feedback" rows="3" required></textarea>
+      <div class="stars-input" id="starRating">
+        <i class="fa fa-star" data-value="1"></i>
+        <i class="fa fa-star" data-value="2"></i>
+        <i class="fa fa-star" data-value="3"></i>
+        <i class="fa fa-star" data-value="4"></i>
+        <i class="fa fa-star" data-value="5"></i>
+      </div>
+      <input type="file" id="imageUpload" accept="image/*">
+      <img id="preview" class="preview-img" style="display:none;">
       <button onclick="addTestimonial()">Submit</button>
     </div>
   </div>
@@ -236,44 +274,45 @@
     </div>
   </footer>
 
-  <script>
-    const testimonials = [
-      {name:"Sophia Carter", title:"Head of Marketing, Brandify", category:"marketing", img:"https://images.unsplash.com/photo-1502685104226-ee32379fefbe?w=200", message:"Umar's campaigns doubled our conversions. Exceptional strategist."},
-      {name:"Liam Johnson", title:"CTO, SecureTech", category:"cyber", img:"https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=200", message:"Delivered an enterprise SOC dashboard with flawless execution."},
-      {name:"Emily Davis", title:"Data Scientist, InsightWorks", category:"data", img:"https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200", message:"His analytics automation saved us hundreds of hours monthly."},
-      {name:"Daniel Smith", title:"Product Manager, Cloudify", category:"backend", img:"https://images.unsplash.com/photo-1595152772835-219674b2a8a6?w=200", message:"Migrated our backend to microservices with zero downtime."},
-      {name:"Ava Wilson", title:"CEO, AI Automators", category:"ai", img:"https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=200", message:"Built an AI chatbot that reduced support costs by 60%."},
-      {name:"Noah Brown", title:"Founder, MobileGo", category:"mobile", img:"https://images.unsplash.com/photo-1552058544-f2b08422138a?w=200", message:"Cross-platform app exceeded expectations in performance."},
-      {name:"Isabella Green", title:"UI/UX Lead, PixelCraft", category:"frontend", img:"https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200", message:"His designs improved user engagement dramatically."},
-      {name:"Ethan Wright", title:"Security Lead, CyberCore", category:"cyber", img:"https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200", message:"Phishing simulation project was a game-changer for us."},
-      {name:"Olivia Martinez", title:"Marketing Director, GrowthLab", category:"marketing", img:"https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200", message:"Delivered creative campaigns with measurable ROI growth."},
-      {name:"Mason Hill", title:"DevOps Engineer, CloudSprint", category:"backend", img:"https://images.unsplash.com/photo-1546456073-6712f79251bb?w=200", message:"Automated CI/CD pipelines seamlessly, boosting deployment speed."},
-      {name:"Amelia Scott", title:"Analyst, DataHive", category:"data", img:"https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?w=200", message:"Interactive dashboards provided real-time actionable insights."},
-      {name:"Logan Parker", title:"Cyber Consultant, ShieldNet", category:"cyber", img:"https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=200", message:"Enhanced security posture through custom vulnerability scans."},
-      {name:"Mia Rivera", title:"UX Specialist, DesignHub", category:"frontend", img:"https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=200", message:"Crafted intuitive interfaces loved by our customers."},
-      {name:"Lucas Adams", title:"AI Researcher, NeuralWorks", category:"ai", img:"https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=200", message:"Exceptional AI automation and natural language processing."},
-      {name:"Charlotte Lewis", title:"CMO, BizGrow", category:"marketing", img:"https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=200", message:"Social campaigns by Umar boosted brand awareness globally."},
-      {name:"James Hall", title:"Mobile Developer, AppWorks", category:"mobile", img:"https://images.unsplash.com/photo-1502767089025-6572583495b0?w=200", message:"Delivered smooth, responsive apps with offline functionality."},
-      {name:"Ella King", title:"Data Manager, InfoTrack", category:"data", img:"https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200", message:"Optimized our ETL pipelines, improving efficiency 40%."},
-      {name:"Henry Allen", title:"Cyber Ops, NetSecure", category:"cyber", img:"https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=200", message:"Custom security tools integrated perfectly into our system."},
-      {name:"Aria Brooks", title:"Frontend Dev, PixelForge", category:"frontend", img:"https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200", message:"Sleek UI revamp with pixel-perfect accuracy."},
-      {name:"Benjamin Clark", title:"Backend Lead, CodeBase", category:"backend", img:"https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=200", message:"Scalable API solutions delivered ahead of schedule."},
-      {name:"Zoe Baker", title:"Marketing Analyst, AdVision", category:"marketing", img:"https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?w=200", message:"Analytics-driven campaigns brought 3x lead generation."},
-      {name:"Carter Young", title:"Mobile PM, GoMobile", category:"mobile", img:"https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200", message:"Fantastic work integrating GPS and payment systems."},
-      {name:"Harper Evans", title:"AI Consultant, BrainTech", category:"ai", img:"https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200", message:"Delivered custom AI solution with outstanding accuracy."},
-      {name:"Sebastian Ward", title:"Security Engineer, LockDown", category:"cyber", img:"https://images.unsplash.com/photo-1502685104226-ee32379fefbe?w=200", message:"Advanced threat detection saved our infrastructure."},
-      {name:"Victoria Gray", title:"UX Manager, CreativeCloud", category:"frontend", img:"https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200", message:"Enhanced UX, leading to 50% higher customer retention."},
-      {name:"Jack Hughes", title:"DevOps Architect, SysWorks", category:"backend", img:"https://images.unsplash.com/photo-1546456073-6712f79251bb?w=200", message:"Infrastructure automation improved scalability dramatically."}
-    ];
+const testimonials = [
+  {name:"Sophia Carter", title:"Head of Marketing, Brandify", category:"marketing", stars:5, img:"https://randomuser.me/api/portraits/women/68.jpg", message:"Umar's campaigns doubled our conversions. Exceptional strategist."},
+  {name:"Liam Johnson", title:"CTO, SecureTech", category:"cyber", stars:5, img:"https://randomuser.me/api/portraits/men/45.jpg", message:"Delivered an enterprise SOC dashboard with flawless execution."},
+  {name:"Emily Davis", title:"Data Scientist, InsightWorks", category:"data", stars:4, img:"https://randomuser.me/api/portraits/women/12.jpg", message:"His analytics automation saved us hundreds of hours monthly."},
+  {name:"Daniel Smith", title:"Product Manager, Cloudify", category:"backend", stars:5, img:"https://randomuser.me/api/portraits/men/32.jpg", message:"Migrated our backend to microservices with zero downtime."},
+  {name:"Ava Wilson", title:"CEO, AI Automators", category:"ai", stars:5, img:"https://randomuser.me/api/portraits/women/25.jpg", message:"Built an AI chatbot that reduced support costs by 60%."},
+  {name:"Noah Brown", title:"Founder, MobileGo", category:"mobile", stars:4, img:"https://randomuser.me/api/portraits/men/10.jpg", message:"Cross-platform app exceeded expectations in performance."},
+  {name:"Isabella Green", title:"UI/UX Lead, PixelCraft", category:"frontend", stars:5, img:"https://randomuser.me/api/portraits/women/43.jpg", message:"His designs improved user engagement dramatically."},
+  {name:"Ethan Wright", title:"Security Lead, CyberCore", category:"cyber", stars:5, img:"https://randomuser.me/api/portraits/men/12.jpg", message:"Phishing simulation project was a game-changer for us."},
+  {name:"Olivia Martinez", title:"Marketing Director, GrowthLab", category:"marketing", stars:4, img:"https://randomuser.me/api/portraits/women/31.jpg", message:"Delivered creative campaigns with measurable ROI growth."},
+  {name:"Mason Hill", title:"DevOps Engineer, CloudSprint", category:"backend", stars:5, img:"https://randomuser.me/api/portraits/men/37.jpg", message:"Automated CI/CD pipelines seamlessly, boosting deployment speed."},
+  {name:"Amelia Scott", title:"Analyst, DataHive", category:"data", stars:5, img:"https://randomuser.me/api/portraits/women/54.jpg", message:"Interactive dashboards provided real-time actionable insights."},
+  {name:"Logan Parker", title:"Cyber Consultant, ShieldNet", category:"cyber", stars:4, img:"https://randomuser.me/api/portraits/men/21.jpg", message:"Enhanced security posture through custom vulnerability scans."},
+  {name:"Mia Rivera", title:"UX Specialist, DesignHub", category:"frontend", stars:5, img:"https://randomuser.me/api/portraits/women/56.jpg", message:"Crafted intuitive interfaces loved by our customers."},
+  {name:"Lucas Adams", title:"AI Researcher, NeuralWorks", category:"ai", stars:5, img:"https://randomuser.me/api/portraits/men/29.jpg", message:"Exceptional AI automation and natural language processing."},
+  {name:"Charlotte Lewis", title:"CMO, BizGrow", category:"marketing", stars:4, img:"https://randomuser.me/api/portraits/women/62.jpg", message:"Social campaigns by Umar boosted brand awareness globally."},
+  {name:"James Hall", title:"Mobile Developer, AppWorks", category:"mobile", stars:5, img:"https://randomuser.me/api/portraits/men/18.jpg", message:"Delivered smooth, responsive apps with offline functionality."},
+  {name:"Ella King", title:"Data Manager, InfoTrack", category:"data", stars:5, img:"https://randomuser.me/api/portraits/women/72.jpg", message:"Optimized our ETL pipelines, improving efficiency 40%."},
+  {name:"Henry Allen", title:"Cyber Ops, NetSecure", category:"cyber", stars:4, img:"https://randomuser.me/api/portraits/men/40.jpg", message:"Custom security tools integrated perfectly into our system."},
+  {name:"Aria Brooks", title:"Frontend Dev, PixelForge", category:"frontend", stars:5, img:"https://randomuser.me/api/portraits/women/19.jpg", message:"Sleek UI revamp with pixel-perfect accuracy."},
+  {name:"Benjamin Clark", title:"Backend Lead, CodeBase", category:"backend", stars:5, img:"https://randomuser.me/api/portraits/men/64.jpg", message:"Scalable API solutions delivered ahead of schedule."},
+  {name:"Zoe Baker", title:"Marketing Analyst, AdVision", category:"marketing", stars:5, img:"https://randomuser.me/api/portraits/women/80.jpg", message:"Analytics-driven campaigns brought 3x lead generation."},
+  {name:"Carter Young", title:"Mobile PM, GoMobile", category:"mobile", stars:4, img:"https://randomuser.me/api/portraits/men/85.jpg", message:"Fantastic work integrating GPS and payment systems."},
+  {name:"Harper Evans", title:"AI Consultant, BrainTech", category:"ai", stars:5, img:"https://randomuser.me/api/portraits/women/50.jpg", message:"Delivered custom AI solution with outstanding accuracy."},
+  {name:"Sebastian Ward", title:"Security Engineer, LockDown", category:"cyber", stars:5, img:"https://randomuser.me/api/portraits/men/72.jpg", message:"Advanced threat detection saved our infrastructure."},
+  {name:"Victoria Gray", title:"UX Manager, CreativeCloud", category:"frontend", stars:4, img:"https://randomuser.me/api/portraits/women/86.jpg", message:"Enhanced UX, leading to 50% higher customer retention."},
+  {name:"Jack Hughes", title:"DevOps Architect, SysWorks", category:"backend", stars:5, img:"https://randomuser.me/api/portraits/men/90.jpg", message:"Infrastructure automation improved scalability dramatically."}
+];
+    let selectedStars = 0;
 
     function renderTestimonials() {
       const grid = document.getElementById('testimonialGrid');
       grid.innerHTML = '';
       testimonials.forEach(t => {
+        const starsHTML = '★'.repeat(t.stars) + '☆'.repeat(5 - t.stars);
         grid.innerHTML += `
           <div class="testimonial" data-category="${t.category}">
             <img class="avatar" src="${t.img}" alt="${t.name}">
-            <div class="stars">★★★★★</div>
+            <div class="stars">${starsHTML}</div>
             <p>“${t.message}”</p>
             <div class="name">${t.name}</div>
             <div class="title">${t.title}</div>
@@ -293,20 +332,52 @@
       });
     }
 
+    // Star rating selection
+    document.querySelectorAll('#starRating i').forEach(star => {
+      star.addEventListener('click', function() {
+        selectedStars = parseInt(this.getAttribute('data-value'));
+        document.querySelectorAll('#starRating i').forEach(s => s.classList.remove('selected'));
+        for (let i = 0; i < selectedStars; i++) {
+          document.querySelectorAll('#starRating i')[i].classList.add('selected');
+        }
+      });
+    });
+
+    // Image preview
+    document.getElementById('imageUpload').addEventListener('change', function(e) {
+      const file = e.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(event) {
+          const preview = document.getElementById('preview');
+          preview.src = event.target.result;
+          preview.style.display = 'block';
+        }
+        reader.readAsDataURL(file);
+      }
+    });
+
     function addTestimonial() {
       const name = document.getElementById('name').value;
       const title = document.getElementById('title').value;
       const message = document.getElementById('message').value;
-      if (name && title && message) {
-        testimonials.push({name, title, category: 'custom', img: 'https://via.placeholder.com/65', message});
+      const img = document.getElementById('preview').src || 'https://via.placeholder.com/65';
+      if (name && title && message && selectedStars > 0) {
+        testimonials.push({name, title, category: 'custom', img, message, stars: selectedStars});
         renderTestimonials();
         document.getElementById('name').value = '';
         document.getElementById('title').value = '';
         document.getElementById('message').value = '';
+        document.getElementById('preview').style.display = 'none';
+        document.getElementById('imageUpload').value = '';
+        document.querySelectorAll('#starRating i').forEach(s => s.classList.remove('selected'));
+        selectedStars = 0;
+      } else {
+        alert('Please fill all fields and select a star rating!');
       }
     }
 
     renderTestimonials();
-  </script>
+</script>
 </body>
 </html>
