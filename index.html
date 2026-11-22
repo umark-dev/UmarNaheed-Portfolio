@@ -230,6 +230,97 @@
     .social-links a:hover {
       color: var(--highlight);
     }
+
+    /* Author's Books */
+    .books-intro {
+      max-width: 820px;
+      margin: -12px auto 38px;
+      text-align: center;
+      color: #52616b;
+      font-size: 1.04rem;
+    }
+
+    .books-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      align-items: stretch;
+    }
+
+    .book-card {
+      display: grid;
+      grid-template-columns:  minmax(112px, 0.78fr) 1.22fr;
+      gap: 22px;
+      align-items: center;
+      background: var(--white);
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(15, 32, 39, 0.10);
+      border: 1px solid rgba(44, 83, 100, 0.10);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .book-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 18px 38px rgba(15, 32, 39, 0.15);
+    }
+
+
+    .book-cover-link {
+      display: block;
+      width: 100%;
+      max-width: 190px;
+      justify-self: center;
+      border-radius: 7px;
+      overflow: hidden;
+      box-shadow: 5px 9px 18px rgba(0, 0, 0, .20);
+      transition: transform .25s ease, box-shadow .25s ease;
+      line-height: 0;
+    }
+    .book-cover-link:hover {
+      transform: translateY(-4px) scale(1.015);
+      box-shadow: 7px 13px 22px rgba(0, 0, 0, .24);
+    }
+    .book-cover-image {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 0.707 / 1;
+      object-fit: cover;
+    }
+    .book-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 18px;
+    }
+    .book-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      padding: 10px 14px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-size: .86rem;
+      font-weight: 700;
+      transition: transform .2s ease, opacity .2s ease;
+    }
+    .book-action:hover { transform: translateY(-2px); opacity: .9; }
+    .book-action.primary { background: var(--primary); color: #fff; }
+    .book-action.secondary { background: #eaf4f7; color: #164e63; }
+    .book-meta {
+      margin-top: 10px;
+      color: #667680;
+      font-size: .82rem;
+    }
+    @media (max-width: 520px) {
+      .book-card { grid-template-columns: 105px 1fr; gap: 16px; padding: 18px; }
+      .book-cover-link { max-width: 105px; }
+      .book-info h3 { font-size: 1.08rem; }
+      .book-action { padding: 9px 11px; font-size: .8rem; }
+    }
+
   </style>
 </head>
 <body>
@@ -249,6 +340,7 @@
   <a href="about.html">About</a>
   <a href="skills.html">Skills</a>
   <a href="projects.html">Projects</a>
+  <a href="#books">Books</a>
   <a href="certifications.html">Certifications</a>
   <a href="services.html">Services</a>
   <a href="testimonials.html">Testimonials</a>
@@ -296,6 +388,58 @@
     <li><strong>Digital Marketing:</strong> SEO, LinkedIn Strategy, Google Ads</li>
     <li><strong>Design:</strong> Figma, Canva, Adobe Suite</li>
   </ul>
+</section>
+
+<section id="books">
+  <h2 class="section-title">Books &amp; Publications</h2>
+  <p class="books-intro">
+    Explore the original academic books authored by <strong>Professor Muhammad Umar Naheed</strong>.
+    Open either title to read the complete book online or download the original PDF for later study.
+  </p>
+
+  <div class="books-grid">
+    <article class="book-card">
+      <a class="book-cover-link" href="books/ict-made-simple.pdf" target="_blank" rel="noopener" aria-label="Open ICT Made Simple PDF">
+        <img class="book-cover-image" src="assets/ict-made-simple-cover.jpg" alt="Original cover of ICT Made Simple by Professor Muhammad Umar Naheed">
+      </a>
+      <div class="book-info">
+        <h3>ICT Made Simple</h3>
+        <div class="book-author">By Professor Muhammad Umar Naheed</div>
+        <p>
+          A practical guide to Information and Communication Technologies, taking learners
+          from zero knowledge to digital confidence. Prepared for ICT-1013, Applications of
+          Information and Communication Technologies, ADP-BA, University of Central Punjab.
+        </p>
+        <span class="book-tag">INFORMATION &amp; COMMUNICATION TECHNOLOGY</span>
+        <div class="book-meta">197 pages · ICT-1013 · ADP-BA · First Semester</div>
+        <div class="book-actions">
+          <a class="book-action primary" href="books/ict-made-simple.pdf" target="_blank" rel="noopener"><i class="fas fa-book-open" aria-hidden="true"></i> Read Online</a>
+          <a class="book-action secondary" href="books/ict-made-simple.pdf" download><i class="fas fa-download" aria-hidden="true"></i> Download PDF</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="book-card">
+      <a class="book-cover-link" href="books/information-security.pdf" target="_blank" rel="noopener" aria-label="Open Information Security PDF">
+        <img class="book-cover-image" src="assets/information-security-cover.jpg" alt="Original cover of Information Security by Professor Muhammad Umar Naheed">
+      </a>
+      <div class="book-info">
+        <h3>Information Security</h3>
+        <div class="book-author">By Professor Muhammad Umar Naheed</div>
+        <p>
+          A university-level textbook covering security principles, cryptography, cyber defence,
+          practical implementation and real-world security, with practical laboratories,
+          visual learning and examination preparation.
+        </p>
+        <span class="book-tag">CYBERSECURITY &amp; INFORMATION PROTECTION</span>
+        <div class="book-meta">201 pages · CSIS2022 · ADP-CS · Third Semester</div>
+        <div class="book-actions">
+          <a class="book-action primary" href="books/information-security.pdf" target="_blank" rel="noopener"><i class="fas fa-book-open" aria-hidden="true"></i> Read Online</a>
+          <a class="book-action secondary" href="books/information-security.pdf" download><i class="fas fa-download" aria-hidden="true"></i> Download PDF</a>
+        </div>
+      </div>
+    </article>
+  </div>
 </section>
 
 <section>
